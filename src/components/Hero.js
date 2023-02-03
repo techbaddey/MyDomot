@@ -65,7 +65,7 @@ class SignupPage extends React.Component {
   render() {
   return (
       <div className="login-signup">
-        <img src={signup} alt="myDomot" className="logo" />
+        <img src={signup} alt="myDomot" className="logotwo" />
         <div className="form">
           <p className="p-two">Hi there!</p>
           <p className="p-three">Create a new account</p>

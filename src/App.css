@@ -9,6 +9,7 @@
 
 .hero {
   height: 100vh;
+  
 }
 
 .login-signup {
@@ -17,7 +18,12 @@
   align-items: center;
   justify-content: space-evenly;
   min-height: 100vh;
-  background-color: #fff;
+  background: rgb(255, 102, 0);
+  background: radial-gradient(
+    circle,
+    rgba(255, 102, 0, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
 }
 
 .login-signup .form {
@@ -29,7 +35,12 @@
 }
 
 .login-signup .logo {
-  width: 180px;
+  width: 360px;
+}
+
+.login-signup .logotwo {
+  width: 560px;
+  margin-left: -100px;
 }
 
 .login-signup label {
@@ -126,7 +137,7 @@
   width: 100%;
   height: 8.5%;
   padding: 10px 25px;
-  background-color: white;
+  background-color: black;
   transition: all 0.4s ease;
   box-shadow: 0 0 3px hsl(0deg 0% 0% / 18%);
   box-shadow: 0px 4px 28px 0px #5f5f5f0d;
@@ -143,6 +154,7 @@
   color: black;
   text-decoration: none;
   padding: 0px 25px;
+  color: #fff;
 }
 
 .nav-btn {
@@ -189,13 +201,12 @@
   max-width: 800px;
   color: #000;
   padding: 15px;
-
 }
 
 .hero-section-content h1 {
   font-size: 2.8rem;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   color: #ff6600;
 }
 
@@ -233,14 +244,20 @@
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background: #ffffff;
+    background: rgb(255, 102, 0);
+    background: radial-gradient(
+      circle,
+      rgba(255, 102, 0, 1) 50%,
+      rgba(252, 176, 69, 1) 100%
+    );
   }
 
   .login-signup .logo {
-    display: flex;
-    width: 80px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    display: none;
+  }
+
+  .login-signup .logotwo {
+    display: none;
   }
 
   .hero-section-content h1 {
@@ -254,5 +271,4 @@
   .hero-section-content button {
     padding: 8px 25px;
   }
-
 }
