@@ -52,6 +52,7 @@ export const SignupPage = () => {
   return (
     <>
       <div className="login-signup">
+        <img src={myDomot} alt="myDomot" className="logo" />
         <div className="form">
           <p className="p-two">Hi there!</p>
           <p className="p-three">Create a new account</p>
@@ -120,8 +121,8 @@ export const LoginPage = () => {
   return (
     <>
       <div className="login-signup">
+        <img src={myDomot} alt="myDomot" className="logo" />
         <div className="form">
-          <img src={myDomot} alt="myDomot" className="logo" />
           <p className="p-two">Hello there! Welcome back</p>
           <p className="p-three">Log in to your account</p>
           <form onSubmit={handleSubmit}>

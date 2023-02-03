@@ -9,9 +9,9 @@
 
 .login-signup {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   min-height: 100vh;
   background: #ffffff;
 }
@@ -24,11 +24,8 @@
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
 }
 
-.login-signup .form .logo {
-  display: flex;
-  width: 50px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+.login-signup .logo {
+  width: 180px;
 }
 
 .login-signup label {
@@ -97,6 +94,7 @@
 .login-signup .p-one:hover {
   color: #ffffff;
   background-color: #ff6600;
+  border: none;
 }
 
 .login-signup .p-two {
@@ -152,15 +150,32 @@
 
 .nav-link:hover {
   color: #ff6600;
+  border: none;
 }
 
 .nav-btn:hover {
   color: #ffffff;
   background-color: #ff6600;
+  border: none;
 }
 
 @media (max-width: 600px) {
   .nav-link {
     font-size: 15px;
+  }
+
+  .login-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffffff;
+  }
+
+  .login-signup .logo {
+    display: flex;
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
