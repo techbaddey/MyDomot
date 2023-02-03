@@ -1,7 +1,6 @@
-import './App.css';
-import React from 'react';
-import Path from './components/Hero';
-
+import "./App.css";
+import React from "react";
+import Path from "./components/Hero";
 
 function App() {
   return (
