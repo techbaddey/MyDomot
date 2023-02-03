@@ -56,7 +56,7 @@ export const SignupPage = () => {
         <div className="form">
           <p className="p-two">Hi there!</p>
           <p className="p-three">Create a new account</p>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={``}>
             <label>First Name<span>*</span></label>
             <input
               type="text"
@@ -125,7 +125,7 @@ export const LoginPage = () => {
         <div className="form">
           <p className="p-two">Hello there! Welcome back</p>
           <p className="p-three">Log in to your account</p>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={``}>
             <label>Email<span>*</span></label>
             <input type="text" value={email} onChange={onEmailChange} required />
             <label>Password<span>*</span></label>
