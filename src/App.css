@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.hero {
+  height: 100vh;
+}
+
 .login-signup {
   display: flex;
   flex-direction: row;
@@ -120,6 +124,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 8.5%;
   padding: 10px 25px;
   background-color: white;
   transition: all 0.4s ease;
@@ -134,7 +139,8 @@
 
 .nav-link {
   font-size: 17px;
-  color: rgb(0 0 0 / 40%);
+  /* color: rgb(0 0 0 / 40%); */
+  color: black;
   text-decoration: none;
   padding: 0px 25px;
 }
@@ -159,6 +165,66 @@
   border: none;
 }
 
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  text-align: center;
+}
+
+.hero-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* filter: blur(1px);
+  -webkit-filter: blur(1px); */
+}
+
+.hero-section-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 800px;
+  color: #000;
+  padding: 15px;
+}
+
+.hero-section-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ff6600;
+}
+
+.hero-section-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-section-content p span {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.hero-section-content button {
+  background-color: #ff6600;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.hero-section-content button:hover {
+  background-color: transparent;
+  color: #ff6600;
+  border: 1px solid #ff6600;
+}
+
 @media (max-width: 600px) {
   .nav-link {
     font-size: 15px;
@@ -178,4 +244,17 @@
     margin: 0 auto;
     margin-bottom: 20px;
   }
+
+  .hero-section-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section-content p {
+    font-size: 1rem;
+  }
+
+  .hero-section-content button {
+    padding: 8px 25px;
+  }
+
 }

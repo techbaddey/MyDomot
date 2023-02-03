@@ -1,14 +1,16 @@
 import React from "react";
 import { NavLink, Link, Routes, Route } from "react-router-dom";
-import myDomot from "./myDomotLogo.png";
-import shopping from "./shoppingImg.png";
+import myDomot from "../assets/myDomotLogo.png";
+import domotHero from "../assets/domotHero.jpg";
+import login from "../assets/login.png";
+import signup from "../assets/signnup.png";
 
 
 
 
 export const Navigation = () => {
   return (
-    <>
+    <div className="hero">
       <div className="navbar">
         <img src={myDomot} alt="myDomot" className="logo" />
         <nav>
@@ -20,7 +22,17 @@ export const Navigation = () => {
           </Link>
         </nav>
       </div>
-    </>
+      <div class="hero-section">
+  <img src={domotHero} alt="myDomot" className="hero-img" />
+  <div class="hero-section-content">
+    <h1>Grocery Shopping Made Easy</h1>
+    <p>Get Your Groceries Delivered Easily and Affordably with <span className="mydomot">My Domot</span></p>
+    <button>Get Started</button>
+<p>Say goodbye to tedious grocery shopping. Let our experienced shoppers bring the groceries you need right to your doorstep, so you can enjoy more time doing the things you love.</p>
+
+  </div>
+</div>
+    </div>
   );
 };
 
@@ -53,7 +65,7 @@ class SignupPage extends React.Component {
   render() {
   return (
       <div className="login-signup">
-        <img src={myDomot} alt="myDomot" className="logo" />
+        <img src={signup} alt="myDomot" className="logo" />
         <div className="form">
           <p className="p-two">Hi there!</p>
           <p className="p-three">Create a new account</p>
@@ -121,7 +133,7 @@ class LoginPage extends React.Component {
   return (
     <>
       <div className="login-signup">
-        <img src={myDomot} alt="myDomot" className="logo" />
+        <img src={login} alt="myDomot" className="logo" />
         <div className="form">
           <p className="p-two">Hello there! Welcome back</p>
           <p className="p-three">Log in to your account</p>
