@@ -23,6 +23,8 @@ export const Navigation = () => {
 };
 
 
+
+
 export const SignupPage = () => {
   const [firstname, setFirstName] = useState("");
   const [lastname, setLastName] = useState("");

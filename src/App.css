@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: space-evenly;
   min-height: 100vh;
-  background-color: #ff6600;
+  background-color: #fff;
 }
 
 .login-signup .form {
@@ -58,7 +58,7 @@
 .login-signup input[type="submit"] {
   background-color: #ff6600;
   color: #000;
-  font-weight: 500;
+  font-weight: 700;
   border: none;
   cursor: pointer;
   margin-top: 25px;
