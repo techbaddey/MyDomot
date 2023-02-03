@@ -46,8 +46,10 @@
   .login-signup input[type="submit"] {
     background-color: #FF6600;
     color: #000;
+    font-weight: 500;
     border: none;
     cursor: pointer;
+    margin-top: 25px;
   }
 
   .login-signup .forgot {
@@ -56,10 +58,50 @@
     margin-top: -14px;
     margin-bottom: 15px;
     text-decoration: none;
-    color: brown;
+    color: #d35704;
   }
 
+  .login-signup .p-one {
+    margin: 5px auto;
+    text-align: center;
+    
+    font-size: 12px;
+    font-weight: 500;
+    color: #d35704;
+    border: 1.5px solid #d35704;
+    border-radius: 5px;
+    background-color: white;
+    padding: 7px;
+    width: fit-content;
+    cursor: pointer;
+  }  
 
+  .login-signup .p-one:hover {
+    color: #FFFFFF;
+    background-color: #d35704;
+  }
+
+.login-signup .p-two{
+  color: rgb(0 0 0 / 40%);
+  font-weight: 500;
+}
+
+
+.login-signup .p-three{
+  color: black;
+  font-size: 22px;
+  /* margin-top: 5px; */
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.login-signup .p-four{
+  color: rgb(0 0 0 / 40%);
+  font-weight: 500;
+  margin-top: 27px;
+}
+
+  
   .navbar {
     display: flex;
     justify-content: end;

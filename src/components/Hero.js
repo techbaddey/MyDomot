@@ -50,6 +50,8 @@ export const SignupPage = () => {
     <>
     <div className="login-signup">
     <div className="form">
+    <p className='p-two'>Hi there!</p>
+      <p className='p-three'>Create a new account</p>
       <form onSubmit={handleSubmit}>
         <label>First Name</label>
         <input type="text" value={firstname} onChange={onFirstNameChange} />
@@ -61,6 +63,10 @@ export const SignupPage = () => {
         <input type="password" value={password} onChange={onPasswordChange} />
         <input type="submit" value="SIGN UP" />
       </form>
+      <p className='p-four'>Have an account already?</p>
+      <NavLink to="/login">
+      <button className='p-one'>LOGIN</button>
+      </NavLink>
     </div>
     </div>
     </>
@@ -92,7 +98,8 @@ export const LoginPage = () => {
     <>
     <div className="login-signup">
     <div className="form">
-      <p>Log in to your account</p>
+       <p className='p-two'>Hello there! Welcome back</p>
+      <p className='p-three'>Log in to your account</p>
       <form onSubmit={handleSubmit}>
         <label>Email</label>
         <input type="text" value={email} onChange={onEmailChange} />
@@ -101,6 +108,10 @@ export const LoginPage = () => {
         <a href="#" className='forgot'>Forgot Password?</a>
         <input type="submit" value="LOGIN" />
       </form>
+      <p className='p-four'>Don't have an account?</p>
+      <NavLink to="/signup">
+      <button className='p-one'>CREATE AN ACCOUNT</button>
+      </NavLink>
     </div>
     </div>
     </>
