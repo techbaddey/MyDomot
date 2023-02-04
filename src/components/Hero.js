@@ -38,7 +38,6 @@ export const Navigation = () => {
 
 
 
-
 class SignupPage extends React.Component {
   constructor(props) {
     super(props);
@@ -54,11 +53,13 @@ class SignupPage extends React.Component {
     });
   }
 
+
   handleSubmit = (e) => {
     e.preventDefault();
     // store values of email and password in localStorage
     localStorage.setItem('email', this.state.email);
     localStorage.setItem('password', this.state.password);
+    alert('Account created successfully');
     window.location.href = '/login';
   }
 
