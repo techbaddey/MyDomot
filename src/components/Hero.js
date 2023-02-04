@@ -127,6 +127,9 @@ class LoginPage extends React.Component {
     if (storedEmail === this.state.email && storedPassword === this.state.password) {
       window.location.href = '/';
     }
+    else {
+      alert('Incorrect email or password');
+    }
   }
 
   render () {
