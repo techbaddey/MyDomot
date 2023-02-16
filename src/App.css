@@ -7,6 +7,20 @@
   font-family: "Poppins", sans-serif;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6600;
+}
+
+
 .hero {
   height: 100vh;
   
@@ -130,6 +144,10 @@
   margin-top: 27px;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -235,6 +253,20 @@
 }
 
 @media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff6600;
+    z-index: 1;
+  }
+
   .nav-link {
     font-size: 15px;
   }
