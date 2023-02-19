@@ -259,7 +259,10 @@ body {
 
   .mobile-nav {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     position: fixed;
+    padding: 10px 7px;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -267,8 +270,16 @@ body {
     z-index: 1;
   }
 
-  .nav-link {
-    font-size: 15px;
+  .mobile-nav .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    padding: 0px;
+  }
+
+  .mobile-nav .nav-link .icon {
+    font-size: 27px;
   }
 
   .login-signup {

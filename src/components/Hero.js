@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Link, Routes, Route } from "react-router-dom";
+import { FaHome, FaShoppingCart, FaSignInAlt, FaRegListAlt } from 'react-icons/fa';
 import myDomot from "../assets/myDomotLogo.png";
 import domotHero from "../assets/domotHero.jpg";
 import login from "../assets/login.png";
@@ -15,11 +16,11 @@ export const Navigation = () => {
           <Link to="/" className="nav-link">
             Home
           </Link>
-          <Link to="/aboutus" className="nav-link">
-            About Us
-          </Link>
           <Link to="/category" className="nav-link">
             Category
+          </Link>
+          <Link to="/cart" className="nav-link">
+            Cart
           </Link>
           <Link to="/login" className="nav-link nav-btn">
             Login/SignUp
@@ -27,20 +28,24 @@ export const Navigation = () => {
         </nav>
         <nav className="mobile-nav">
           <Link to="/" className="nav-link">
+             <FaHome className="icon" />
             Home
           </Link>
-          <Link to="/aboutus" className="nav-link">
-            About Us
-          </Link>
           <Link to="/category" className="nav-link">
+            <FaRegListAlt className="icon"/>
             Category
           </Link>
+          <Link to="/cart" className="nav-link">
+            <FaShoppingCart className="icon" />
+            Cart
+          </Link>
           <Link to="/login" className="nav-link">
+            <FaSignInAlt className="icon" />
             Login/SignUp
           </Link>
         </nav>
       </div>
-      <div class="hero-section">
+      <div className="hero-section">
         <img src={domotHero} alt="myDomot" className="hero-img" />
         <div class="hero-section-content">
           <h1>Grocery Shopping Made Easy</h1>
@@ -55,6 +60,9 @@ export const Navigation = () => {
             can enjoy more time doing the things you love.
           </p>
         </div>
+      </div>
+      <div className="values">
+         <p> Accesible </p>
       </div>
       <Category />
     </div>
