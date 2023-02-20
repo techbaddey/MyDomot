@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, Link, Routes, Route } from "react-router-dom";
-import { FiHome, FiShoppingCart, FiLogIn, FiInfo } from 'react-icons/fi';
+import { FiHome, FiShoppingCart, FiLogIn, FiInfo, FiSearch } from "react-icons/fi";
 import myDomot from "../assets/myDomotLogo.png";
 import domotHero from "../assets/domotHero.jpg";
 import login from "../assets/login.png";
@@ -10,79 +10,80 @@ import Footer from "./Footer";
 import About from "./About";
 
 
-
 export const Navigation = () => {
   return (
-   
-      <div className="navbar">
-        <img src={myDomot} alt="myDomot" className="logo" />
-        <nav className="desktop-nav">
-          <Link to="/" className="nav-link">
-            Home
-          </Link>
-          <Link to="/aboutus" className="nav-link">
-            About Us
-          </Link>
-          <Link to="/cart" className="nav-link">
-            Cart
-          </Link>
-          <Link to="/login" className="nav-link nav-btn">
-            Login/SignUp
-          </Link>
-        </nav>
-        <nav className="mobile-nav">
-          <Link to="/" className="nav-link">
-             <FiHome className="icon" />
-            Home
-          </Link>
-          <Link to="/aboutus" className="nav-link">
-            <FiInfo className="icon"/>
-            About Us
-          </Link>
-          <Link to="/cart" className="nav-link">
-            <FiShoppingCart className="icon" />
-            Cart
-          </Link>
-          <Link to="/login" className="nav-link">
-            <FiLogIn className="icon" />
-            Login/SignUp
-          </Link>
-        </nav>
+    <div className="navbar">
+      <div className="search">
+      <img src={myDomot} alt="myDomot" className="logo" />
+      <FiSearch className="iconsearch"/>
+      <input type="search" id="search" />
       </div>
+      <nav className="desktop-nav">
+        <Link to="/" className="nav-link">
+          Home
+        </Link>
+        <Link to="/aboutus" className="nav-link">
+          About Us
+        </Link>
+        <Link to="/cart" className="nav-link">
+          Cart
+        </Link>
+        <Link to="/login" className="nav-link nav-btn">
+          Login/SignUp
+        </Link>
+      </nav>
+      <nav className="mobile-nav">
+        <Link to="/" className="nav-link">
+          <FiHome className="icon" />
+          Home
+        </Link>
+        <Link to="/aboutus" className="nav-link">
+          <FiInfo className="icon" />
+          About Us
+        </Link>
+        <Link to="/cart" className="nav-link">
+          <FiShoppingCart className="icon" />
+          Cart
+        </Link>
+        <Link to="/login" className="nav-link">
+          <FiLogIn className="icon" />
+          Login/SignUp
+        </Link>
+      </nav>
+    </div>
   );
 };
 
 export const Home = () => {
   return (
     <>
-   <Navigation />
-   <div className="hero">
-      <div className="hero-section">
-        <img src={domotHero} alt="myDomot" className="hero-img" />
-        <div class="hero-section-content">
-          <h1>Grocery Shopping Made Easy</h1>
-          <p>
-            Get Your Groceries Delivered Easily and Affordably with{" "}
-            <span className="mydomot">My Domot</span>
-          </p>
-          <button>Get Started</button>
-          <p>
-            Say goodbye to tedious grocery shopping. Let our experienced
-            shoppers bring the groceries you need right to your doorstep, so you
-            can enjoy more time doing the things you love.
-          </p>
+      <Navigation />
+      <div className="hero">
+        <div className="hero-section">
+          <img src={domotHero} alt="myDomot" className="hero-img" />
+          <div class="hero-section-content">
+            <h1>Grocery Shopping Made Easy</h1>
+            <p>
+              Get Your Groceries Delivered Easily and Affordably with{" "}
+              <span className="mydomot">My Domot</span>
+            </p>
+            <button>Get Started</button>
+            <p>
+              Say goodbye to tedious grocery shopping. Let our experienced
+              shoppers bring the groceries you need right to your doorstep, so
+              you can enjoy more time doing the things you love.
+            </p>
+          </div>
+          <div className="values">
+            <p> Accesible </p>
+          </div>
         </div>
-        <div className="values">
-         <p> Accesible </p>
-      </div>
-      </div>
       </div>
       <Category />
       <Footer />
-      </>
+    </>
   );
 };
-
 
 class SignupPage extends React.Component {
   constructor(props) {

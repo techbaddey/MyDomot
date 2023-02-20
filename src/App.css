@@ -152,9 +152,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
   width: 100%;
   height: 8.5%;
-  padding: 10px 25px;
+  padding: 15px 25px 15px 25px;
   background-color: black;
   transition: all 0.4s ease;
   box-shadow: 0 0 3px hsl(0deg 0% 0% / 18%);
@@ -164,6 +167,30 @@ body {
 
 .navbar .logo {
   width: 60px;
+}
+
+.iconsearch {
+  width: 30px;
+  height: 30px;
+  color: #ff6600;
+  margin-left: 25px;
+  background-color: #fff;
+  border-radius: 4px 0px 0px 4px;
+  padding: 4px;
+}
+
+.navbar .search {
+  display: flex;
+  align-items: center;
+}
+
+.navbar #search {
+  height: 30px;
+  width: 250px;
+  border: none;
+  outline: none;
+  border-radius: 0px 4px 4px 0px;
+  padding: 0px 7px;
 }
 
 .nav-link {
@@ -252,9 +279,19 @@ body {
   font-size: 20px;
 }
 
+@media (max-width: 876px) {
+  nav {
+    display: none;
+  }
+}
+
+
 @media (max-width: 600px) {
 .navbar {
-  background-color: #fff;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
   nav {
@@ -266,7 +303,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     position: fixed;
-    padding: 10px 7px;
+    padding: 10px 15px;
     bottom: 0;
     left: 0;
     width: 100%;
