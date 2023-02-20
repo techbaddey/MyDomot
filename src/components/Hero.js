@@ -13,7 +13,7 @@ import About from "./About";
 
 export const Navigation = () => {
   return (
-    <div className="hero">
+   
       <div className="navbar">
         <img src={myDomot} alt="myDomot" className="logo" />
         <nav className="desktop-nav">
@@ -49,6 +49,14 @@ export const Navigation = () => {
           </Link>
         </nav>
       </div>
+  );
+};
+
+export const Home = () => {
+  return (
+    <>
+   <Navigation />
+   <div className="hero">
       <div className="hero-section">
         <img src={domotHero} alt="myDomot" className="hero-img" />
         <div class="hero-section-content">
@@ -64,15 +72,17 @@ export const Navigation = () => {
             can enjoy more time doing the things you love.
           </p>
         </div>
-      </div>
-      <div className="values">
+        <div className="values">
          <p> Accesible </p>
+      </div>
+      </div>
       </div>
       <Category />
       <Footer />
-    </div>
+      </>
   );
 };
+
 
 class SignupPage extends React.Component {
   constructor(props) {
@@ -229,7 +239,7 @@ class LoginPage extends React.Component {
 function Path() {
   return (
     <Routes>
-      <Route path="/" element={<Navigation />} />
+      <Route path="/" element={<Home />} />
       <Route path="/aboutus" element={<About />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/login" element={<LoginPage />} />
