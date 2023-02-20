@@ -1,0 +1,18 @@
+.aboutUs-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+/* CSS for about us component - mobile */
+@media screen and (max-width: 600px) {
+    .aboutUs-container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }

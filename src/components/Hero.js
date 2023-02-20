@@ -1,23 +1,27 @@
 import React from "react";
 import { NavLink, Link, Routes, Route } from "react-router-dom";
-import { FaHome, FaShoppingCart, FaSignInAlt, FaRegListAlt } from 'react-icons/fa';
+import { FiHome, FiShoppingCart, FiLogIn, FiInfo } from 'react-icons/fi';
 import myDomot from "../assets/myDomotLogo.png";
 import domotHero from "../assets/domotHero.jpg";
 import login from "../assets/login.png";
 import signup from "../assets/signnup.png";
 import Category from "./Category";
+import Footer from "./Footer";
+import About from "./About";
+
+
 
 export const Navigation = () => {
   return (
     <div className="hero">
       <div className="navbar">
         <img src={myDomot} alt="myDomot" className="logo" />
-        <nav>
+        <nav className="desktop-nav">
           <Link to="/" className="nav-link">
             Home
           </Link>
-          <Link to="/category" className="nav-link">
-            Category
+          <Link to="/aboutus" className="nav-link">
+            About Us
           </Link>
           <Link to="/cart" className="nav-link">
             Cart
@@ -28,19 +32,19 @@ export const Navigation = () => {
         </nav>
         <nav className="mobile-nav">
           <Link to="/" className="nav-link">
-             <FaHome className="icon" />
+             <FiHome className="icon" />
             Home
           </Link>
-          <Link to="/category" className="nav-link">
-            <FaRegListAlt className="icon"/>
-            Category
+          <Link to="/aboutus" className="nav-link">
+            <FiInfo className="icon"/>
+            About Us
           </Link>
           <Link to="/cart" className="nav-link">
-            <FaShoppingCart className="icon" />
+            <FiShoppingCart className="icon" />
             Cart
           </Link>
           <Link to="/login" className="nav-link">
-            <FaSignInAlt className="icon" />
+            <FiLogIn className="icon" />
             Login/SignUp
           </Link>
         </nav>
@@ -65,6 +69,7 @@ export const Navigation = () => {
          <p> Accesible </p>
       </div>
       <Category />
+      <Footer />
     </div>
   );
 };
@@ -225,7 +230,7 @@ function Path() {
   return (
     <Routes>
       <Route path="/" element={<Navigation />} />
-      <Route path="/category" element={<Category />} />
+      <Route path="/aboutus" element={<About />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/login" element={<LoginPage />} />
     </Routes>
