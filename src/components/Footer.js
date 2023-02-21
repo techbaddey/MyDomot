@@ -16,7 +16,7 @@ function Footer() {
             <li><a href="#">Fruits</a></li>
             <li><a href="#">Meat, Poultry & Seafood</a></li>
             <li><a href="#">Oils & Spices</a></li>
-            <li><a href="#">Packaged Food</a></li>
+            <li><a href="#">Canned Food</a></li>
           </ul>
         </div>
         <div class="footer-menu-item">
@@ -25,7 +25,7 @@ function Footer() {
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">FAQ</a></li>
-            <li><a href="#">Make a List</a></li>
+          
           </ul>
         </div>
         <div class="footer-menu-item">

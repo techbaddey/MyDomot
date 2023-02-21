@@ -173,7 +173,7 @@ body {
   width: 30px;
   height: 30px;
   color: #ff6600;
-  margin-left: 25px;
+  margin-left: 104px;
   background-color: #fff;
   border-radius: 4px 0px 0px 4px;
   padding: 4px;
@@ -182,7 +182,7 @@ body {
 .navbar .search {
   display: flex;
   align-items: center;
-}
+} 
 
 .navbar #search {
   height: 30px;
@@ -191,6 +191,10 @@ body {
   outline: none;
   border-radius: 0px 4px 4px 0px;
   padding: 0px 7px;
+}
+
+.navbar #search::placeholder{
+  color: #ff6600;
 }
 
 .nav-link {
@@ -270,16 +274,25 @@ body {
 .hero-section-content button {
   background-color: #ff6600;
   color: #fff;
-  font-weight: bold;
-  padding: 10px 30px;
+  /* font-weight: bold; */
+  padding: 10px 20px;
   border-radius: 5px;
   border: none;
   margin-bottom: 20px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
-@media (max-width: 876px) {
+.hero-section-content .btn-two{
+  background-color: #fff;
+  color: #ff6600;
+}
+
+
+
+@media (max-width: 952px) {
   nav {
     display: none;
   }
@@ -354,6 +367,6 @@ body {
   }
 
   .hero-section-content button {
-    padding: 8px 25px;
+    padding: 7px 18px;
   }
 }

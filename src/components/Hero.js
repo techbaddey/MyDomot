@@ -13,10 +13,11 @@ import About from "./About";
 export const Navigation = () => {
   return (
     <div className="navbar">
-      <div className="search">
+      
       <img src={myDomot} alt="myDomot" className="logo" />
+      <div className="search">
       <FiSearch className="iconsearch"/>
-      <input type="search" id="search" />
+      <input type="search" id="search" placeholder="what do you need?" />
       </div>
       <nav className="desktop-nav">
         <Link to="/" className="nav-link">
@@ -67,12 +68,13 @@ export const Home = () => {
               Get Your Groceries Delivered Easily and Affordably with{" "}
               <span className="mydomot">My Domot</span>
             </p>
-            <button>Get Started</button>
             <p>
               Say goodbye to tedious grocery shopping. Let our experienced
               shoppers bring the groceries you need right to your doorstep, so
               you can enjoy more time doing the things you love.
             </p>
+            <button className="btn-one">Shop Online</button>
+            <button className="btn-two">Get an Offline Shopper</button>
           </div>
           <div className="values">
             <p> Accesible </p>
