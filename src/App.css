@@ -173,7 +173,6 @@ body {
   width: 30px;
   height: 30px;
   color: #ff6600;
-  margin-left: 104px;
   background-color: #fff;
   border-radius: 4px 0px 0px 4px;
   padding: 4px;
@@ -186,7 +185,7 @@ body {
 
 .navbar #search {
   height: 30px;
-  width: 250px;
+  width: 300px;
   border: none;
   outline: none;
   border-radius: 0px 4px 4px 0px;
@@ -307,6 +306,10 @@ body {
   z-index: 1;
 }
 
+.navbar #search {
+  width: 200px;
+}
+
   nav {
     display: none;
   }
@@ -326,6 +329,7 @@ body {
 
   .mobile-nav .nav-link {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     font-size: 12px;
