@@ -20,10 +20,8 @@ body {
   background: #ff6600;
 }
 
-
 .hero {
   height: 100vh;
-  
 }
 
 .login-signup {
@@ -181,7 +179,7 @@ body {
 .navbar .search {
   display: flex;
   align-items: center;
-} 
+}
 
 .navbar #search {
   height: 30px;
@@ -192,7 +190,7 @@ body {
   padding: 0px 7px;
 }
 
-.navbar #search::placeholder{
+.navbar #search::placeholder {
   color: #ff6600;
 }
 
@@ -284,12 +282,10 @@ body {
   margin-right: 8px;
 }
 
-.hero-section-content .btn-two{
+.hero-section-content .btn-two {
   background-color: #fff;
   color: #ff6600;
 }
-
-
 
 @media (max-width: 952px) {
   nav {
@@ -297,18 +293,18 @@ body {
   }
 }
 
-
 @media (max-width: 600px) {
-.navbar {
-  background-color: black;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
+  .navbar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    height: 55px;
+    z-index: 1;
+  }
 
-.navbar #search {
-  width: 200px;
-}
+  .navbar #search {
+    width: 200px;
+  }
 
   nav {
     display: none;
@@ -319,10 +315,11 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     position: fixed;
-    padding: 10px 15px;
+    padding: 5px 15px;
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 55px;
     background-color: black;
     z-index: 1;
   }
@@ -361,7 +358,6 @@ body {
     display: none;
   }
 
- 
   .hero-section-content h1 {
     font-size: 1.8rem;
   }
