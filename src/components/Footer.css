@@ -1,9 +1,10 @@
 .footer {
     font-family: sans-serif;
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: #828282;
     padding: 40px;
     margin-top: 40px;
+    color: #fff;
   }
 
   .footer-container {
@@ -40,10 +41,17 @@
 
   .footer-links a {
     font-size: 0.9em;
-    color: #3d3d3d;
+    color: #fff;
     text-decoration: none;
     line-height: 2;
     display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .footer-links a:hover {
+    color: #b5e5a5;
+    text-decoration: underline;
   }
 
   .footer-connect .footer-icon {
@@ -53,11 +61,16 @@
     margin-top: -8px;
   }
 
+  .footer-connect .footer-icon:hover {
+    color: #b5e5a5;
+    cursor: pointer;
+  }
+
   .footer-copyright {
     font-size: 0.8em;
     margin-top: 10px;
     padding-top: 10px;
-    border-top: 1px solid #3d3d3d;
+    border-top: 1px solid #fff;
     text-align: center;
   }
 

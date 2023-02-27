@@ -1,26 +1,35 @@
 import React from "react";
 import { NavLink, Link, Routes, Route } from "react-router-dom";
-import { FiHome, FiShoppingCart, FiLogIn, FiInfo, FiSearch } from "react-icons/fi";
+import {
+  FiHome,
+  FiShoppingCart,
+  FiLogIn,
+  FiInfo,
+  FiSearch,
+} from "react-icons/fi";
 import myDomot from "../assets/myDomotLogo.png";
-import domotHero from "../assets/domotHero.jpg";
 import login from "../assets/login.png";
 import signup from "../assets/signnup.png";
 import Category from "./Category";
 import Footer from "./Footer";
 import About from "./About";
-
+import groceryOne from "../assets/grocery1.png";
+import groceryTwo from "../assets/grocery2.png";
+import groceryThree from "../assets/grocery3.png";
+import groceryFour from "../assets/grocery4.png";
 
 export const Navigation = () => {
   return (
     <div className="navbar">
-      
       <img src={myDomot} alt="myDomot" className="logo" />
       <div className="search">
-      <FiSearch className="iconsearch"/>
-      <input type="search" id="search" placeholder="what do you need?" />
+        <FiSearch className="iconsearch" />
+        <input type="search" id="search" placeholder="what do you need?" />
+        <button>SEARCH</button>
       </div>
       <nav className="desktop-nav">
         <Link to="/" className="nav-link">
+        {/* <FiHome className="icon" /> */}
           Home
         </Link>
         <Link to="/aboutus" className="nav-link">
@@ -55,37 +64,144 @@ export const Navigation = () => {
   );
 };
 
-export const Home = () => {
-  return (
-    <>
-      <Navigation />
-      <div className="hero">
-        <div className="hero-section">
-          <img src={domotHero} alt="myDomot" className="hero-img" />
-          <div class="hero-section-content">
-            <h1>Grocery Shopping Made Easy</h1>
-            <p>
-              Get Your Groceries Delivered Easily and Affordably with{" "}
-              <span className="mydomot">My Domot</span>
-            </p>
-            <p>
-              Say goodbye to tedious grocery shopping. Let our experienced
-              shoppers bring the groceries you need right to your doorstep, so
-              you can enjoy more time doing the things you love.
-            </p>
-            <button className="btn-one">Shop Online</button>
-            <button className="btn-two">Get an Offline Shopper</button>
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentSlide: 0,
+    };
+  }
+
+  handleSlideChange(slideIndex) {
+    this.setState({ currentSlide: slideIndex });
+  }
+
+  render() {
+    const slides = [
+      {
+        image: groceryOne,
+        text: "Get Your Groceries Delivered Easily and Affordably with MyDomot",
+        subtext: "Say goodbye to tedious grocery shopping. Let our experienced shoppers bring the groceries you need right to your doorstep, so  you can enjoy more time doing the things you love.",
+        btnText: "Shop Online",
+      },
+      {
+        image: groceryFour,
+        text: "Slide 3",
+        subtext: "Slide 1",
+        btnText: "Get an Offline Shoppper",
+      },
+      {
+        image: groceryThree,
+        text: "Slide 3",
+        subtext: "Slide 1",
+        btnText: "Make a List",
+      },
+    ];
+
+    return (
+      <>
+        <Navigation />
+        <div className="slider-container">
+          <div className="slider">
+            {slides.map((slide, index) => {
+              const slideClasses = `slide ${
+                index === this.state.currentSlide ? "active" : ""
+              }`;
+              return (
+                <div className={slideClasses} key={index}>
+                  <img src={slide.image} alt={slide.text} />
+                  <div className="slide-text">
+                    <p className="first-text">{slide.text}</p>
+                    <p>{slide.subtext}</p>
+                    <button
+                      onClick={() => this.handleSlideChange(index)}
+                      className="slide-btn"
+                    >
+                      {slide.btnText}
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-          <div className="values">
-            <p> Accesible </p>
+          <div className="slider-nav">
+            {slides.map((slide, index) => {
+              const navClasses = `slider-nav-btn ${
+                index === this.state.currentSlide ? "active" : ""
+              }`;
+              return (
+                <button
+                  className={navClasses}
+                  key={index}
+                  onClick={() => this.handleSlideChange(index)}
+                >
+                  {/* {index + 1} */}
+                </button>
+              );
+            })}
+          </div>
+          <div className="slider-arrows">
+            <button
+              className="slider-arrow-btn left-btn"
+              onClick={() =>
+                this.handleSlideChange(
+                  this.state.currentSlide === 0
+                    ? slides.length - 1
+                    : this.state.currentSlide - 1
+                )
+              }
+            >
+              &#8592;
+            </button>
+            <button
+              className="slider-arrow-btn right-btn"
+              onClick={() =>
+                this.handleSlideChange(
+                  this.state.currentSlide === slides.length - 1
+                    ? 0
+                    : this.state.currentSlide + 1
+                )
+              }
+            >
+              &#8594;
+            </button>
           </div>
         </div>
-      </div>
-      <Category />
-      <Footer />
-    </>
-  );
-};
+        <Category />
+        <Footer />
+      </>
+    );
+  }
+}
+
+// export const Home = () => {
+//   return (
+//     <>
+//       <Navigation />
+//       <div className="hero">
+//         <div className="hero-section">
+//           {/* <img src={domotHero} alt="myDomot" className="hero-img" /> */}
+//           <div class="hero-section-content">
+//             <h1>Grocery Shopping Made Easy</h1>
+//             <p>
+//               Get Your Groceries Delivered Easily and Affordably with{" "}
+//               <span className="mydomot">My Domot</span>
+//             </p>
+//             <p>
+//               Say goodbye to tedious grocery shopping. Let our experienced
+//               shoppers bring the groceries you need right to your doorstep, so
+//               you can enjoy more time doing the things you love.
+//             </p>
+//             <button className="btn-one">Shop Online</button>
+//             <button className="btn-two">Get an Offline Shopper</button>
+//           </div>
+//         </div>
+//       </div>
+//       <Category />
+//       <Footer />
+//     </>
+//   );
+// };
 
 class SignupPage extends React.Component {
   constructor(props) {

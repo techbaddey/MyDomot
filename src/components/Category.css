@@ -50,7 +50,7 @@
 }
 
 .card__button {
-  background-color: #ff6600;
+  background-color: #4D8E4F;
   border: none;
   color: white;
   padding: 8px;
@@ -65,7 +65,7 @@
 }
 
 .card__button:hover {
-  background-color: #ff6600;
+  background-color: #4D8E4F;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
   transform: scale(1.05);
   cursor: pointer;

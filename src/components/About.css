@@ -8,6 +8,10 @@
     margin-top: 55px;
   }
 
+  .aboutUs-container h1 {
+    color: #4D8E4F;
+  }
+
 /* CSS for about us component - mobile */
 @media screen and (max-width: 600px) {
     .aboutUs-container {
