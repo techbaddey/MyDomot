@@ -101,13 +101,18 @@ class Home extends React.Component {
     return (
       <>
         <Navigation />
+        
         <div className="slider-container">
+          <h2>Grocery Shopping Made Easy</h2>
           <div className="slider">
+            
             {slides.map((slide, index) => {
               const slideClasses = `slide ${
                 index === this.state.currentSlide ? "active" : ""
               }`;
               return (
+                <>
+            
                 <div className={slideClasses} key={index}>
                   <img src={slide.image} alt={slide.text} />
                   <div className="slide-text">
@@ -121,6 +126,7 @@ class Home extends React.Component {
                     </button>
                   </div>
                 </div>
+                </>
               );
             })}
           </div>
