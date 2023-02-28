@@ -308,17 +308,17 @@ body {
 
 .slider-container {
   /* width: 100%; */
-  height: 92vh;
+  height: 85vh;
   background-color: #B5E5A5;
   border-radius: 9px;
-  padding: 50px 8px 0px 8px;
+  padding: 30px 8px 0px 8px;
   margin: 65px 8px 0px 8px;
 }
 
 .slider {
   position: relative;
   width: 100%;
-  height: 66%;
+  height: 77%;
   overflow: hidden;
   margin-bottom: 50px;
 }
@@ -328,7 +328,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 103%;
   background-size: cover;
   background-position: center;
   opacity: 0;
@@ -343,6 +343,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+  font-size: 16px;
   padding: 20px;
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
@@ -374,7 +375,6 @@ body {
 .slider-nav {
   width: 100%;
   text-align: center;
-  
 }
 
 .slider-nav-btn {
@@ -401,7 +401,7 @@ body {
 
 .slider-arrow-btn {
   position: relative;
-  top: -25vh;
+  top: -36vh;
   background: #FFA845;
   color: #fff;
   border: 0;
@@ -447,7 +447,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     position: fixed;
-    padding: 5px 15px;
+    padding: 7px 15px;
     bottom: 0;
     left: 0;
     width: 100%;
