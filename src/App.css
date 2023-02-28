@@ -325,8 +325,8 @@ body {
 }
 
 .slider-container h2 {
-  text-align: right;
-  margin-right: 11%;
+  text-align: center;
+  /* margin-right: 11%; */
   /* margin-top: 2%; */
   color: #FFA845;
   padding-top: 30px;
