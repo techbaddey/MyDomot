@@ -5,6 +5,7 @@ import {
   FiShoppingCart,
   FiLogIn,
   FiInfo,
+  FiList,
   FiSearch,
 } from "react-icons/fi";
 import myDomot from "../assets/myDomotLogo.png";
@@ -35,6 +36,9 @@ export const Navigation = () => {
         <Link to="/aboutus" className="nav-link">
           About Us
         </Link>
+        <Link to="/category" className="nav-link">
+          Category
+        </Link>
         <Link to="/cart" className="nav-link">
           Cart
         </Link>
@@ -50,6 +54,10 @@ export const Navigation = () => {
         <Link to="/aboutus" className="nav-link">
           <FiInfo className="icon" />
           About Us
+        </Link>
+        <Link to="/category" className="nav-link">
+          <FiList className="icon" />
+          Category
         </Link>
         <Link to="/cart" className="nav-link">
           <FiShoppingCart className="icon" />
@@ -366,6 +374,7 @@ function Path() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/aboutus" element={<About />} />
+      <Route path="/category" element={<Category />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/login" element={<LoginPage />} />
     </Routes>

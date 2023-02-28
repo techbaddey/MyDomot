@@ -1,11 +1,13 @@
 import React from 'react';
 import '../components/Category.css';
+import { Navigation } from './Hero';
 import apple from "../groceries/apples.jfif";
 import eggs from "../groceries/eggs.jpg";
 import banana from "../groceries/banana.jpeg";
 import tomatoes from "../groceries/tomatoes.jpeg";
 import grapes from "../groceries/grapes.jpg";
 import onions from "../groceries/onions.jpg";
+
 
 
 const Category = () => {
@@ -73,6 +75,8 @@ const Category = () => {
     ];
   
     return (
+      <>
+      <Navigation />
       <div className="container">
         {groceryList.map((grocery, index) => (
           <div key={index} className="card">
@@ -85,6 +89,7 @@ const Category = () => {
           </div>
         ))}
       </div>
+      </>
     );
   };
   export default Category;
