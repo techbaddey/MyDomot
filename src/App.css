@@ -29,26 +29,31 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   min-height: 100vh;
-  background: #B5E5A5;
+  background: #fff;
 }
 
 .login-signup .form {
+  margin: 0 auto;
   width: 320px;
   background: #fff;
   border-radius: 15px;
   padding: 30px 30px 25px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1); */
 }
 
 .login-signup .logo {
-  width: 360px;
+  width: 100%;
+  width: 50vw;
+  height: 100vh;
 }
 
 .login-signup .logotwo {
-  width: 560px;
-  margin-left: -100px;
+  width: 100%;
+  width: 50vw;
+  height: 100vh;
+  /* margin-left: -100px; */
 }
 
 .login-signup label {
@@ -564,6 +569,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
     background: #B5E5A5;
   }
