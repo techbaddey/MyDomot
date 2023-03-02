@@ -14,10 +14,12 @@ import signup from "../assets/signnup.png";
 import Category from "./Category";
 import Footer from "./Footer";
 import About from "./About";
-import groceryOne from "../assets/grocery1.png";
-import groceryTwo from "../assets/grocery2.png";
-import groceryThree from "../assets/grocery3.png";
-import groceryFour from "../assets/grocery4.png";
+import groceryOne from "../assets/grocery_one.png";
+import groceryTwo from "../assets/grocery_two.png";
+import groceryThree from "../assets/grocery_three.png";
+import groceryFour from "../assets/grocery_four.png";
+import groceryFive from "../assets/grocery_five.png";
+import grocerySix from "../assets/grocery_six.png";
 
 export const Navigation = () => {
   return (
@@ -87,22 +89,25 @@ class Home extends React.Component {
   render() {
     const slides = [
       {
-        image: groceryOne,
+        image: groceryTwo,
         text: "Get Your Groceries Delivered Easily and Affordably with MyDomot",
         subtext: "Say goodbye to tedious grocery shopping. Let our experienced shoppers bring the groceries you need right to your doorstep, so  you can enjoy more time doing the things you love.",
         btnText: "Shop Online",
+        imagetwo: groceryFive,
       },
       {
         image: groceryFour,
         text: "Slide 3",
         subtext: "Slide 1",
         btnText: "Get an Offline Shoppper",
+        imagetwo: groceryOne,
       },
       {
         image: groceryThree,
         text: "Slide 3",
         subtext: "Slide 1",
         btnText: "Make a List",
+        imagetwo: grocerySix,
       },
     ];
 
@@ -123,6 +128,7 @@ class Home extends React.Component {
             
                 <div className={slideClasses} key={index}>
                   <img src={slide.image} alt={slide.text} />
+                  <img src={slide.imagetwo} alt={slide.text} className="web-image-two" />
                   <div className="slide-text">
                     <p className="first-text">{slide.text}</p>
                     <p>{slide.subtext}</p>
