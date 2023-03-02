@@ -32,21 +32,29 @@ export const Navigation = () => {
       </div>
       <nav className="desktop-nav">
         <Link to="/" className="nav-link">
-        {/* <FiHome className="icon" /> */}
+        <FiHome className="icon" />
           Home
         </Link>
         <Link to="/aboutus" className="nav-link">
+        <FiInfo className="icon" />
           About Us
         </Link>
         <Link to="/category" className="nav-link">
+        <FiList className="icon" />
           Category
         </Link>
         <Link to="/cart" className="nav-link">
+        <FiShoppingCart className="icon" />
           Cart
+          <div className="cart-count">0</div>
         </Link>
-        <Link to="/login" className="nav-link nav-btn">
+        <Link to="/login" className="nav-link">
+        <FiLogIn className="icon" />
           Login/SignUp
         </Link>
+        {/* <Link to="/login" className="nav-link nav-btn">
+          Login/SignUp
+        </Link> */}
       </nav>
       <nav className="mobile-nav">
         <Link to="/" className="nav-link">
@@ -64,6 +72,7 @@ export const Navigation = () => {
         <Link to="/cart" className="nav-link">
           <FiShoppingCart className="icon" />
           Cart
+          <div className="cart-count">0</div>
         </Link>
         <Link to="/login" className="nav-link">
           <FiLogIn className="icon" />
