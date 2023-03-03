@@ -77,6 +77,7 @@ const Category = () => {
     return (
       <>
       <Navigation />
+      <p>Shop by Categry</p>
       <div className="container">
         {groceryList.map((grocery, index) => (
           <div key={index} className="card">

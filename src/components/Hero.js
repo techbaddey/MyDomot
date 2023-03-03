@@ -10,7 +10,7 @@ import {
 } from "react-icons/fi";
 import myDomot from "../assets/myDomotLogo.png";
 import login from "../assets/login.png";
-import signup from "../assets/signnup.png";
+import signup from "../assets/signnup.jpeg";
 import Category from "./Category";
 import Footer from "./Footer";
 import About from "./About";
