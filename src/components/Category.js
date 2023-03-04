@@ -497,16 +497,16 @@ const Category = () => {
   const handleChange = (e) => {
     setSelectedCategory(e.target.value);
     switch (e.target.value) {
-      case "food":
+      case "foodstuffs":
         setCategory(foodstuffs);
         break;
-      case "vegetables":
+      case "fruitsAndVegetables":
         setCategory(fruitsAndVegetables);
         break;
-      case "cannedFood":
+      case "oilsAndSeasonings":
         setCategory(oilsAndSeasonings);
         break;
-      case "oilsAndSpices":
+      case "tubersAndGrains":
         setCategory(tubersAndGrains);
         break;
       case "beveragesAndCannedFoods":
@@ -531,13 +531,12 @@ const Category = () => {
         {/* <label>Category:</label> */}
         <select onChange={handleChange} value={selectedCategory}>
           <option value="">Select Category</option>
-          <option value="food">Foodstuffs</option>
-          <option value="food">Fruits and Vegetables</option>
-          <option value="food">Root and Tubers</option>
-          <option value="food">Oils and Seasonings</option>
-          <option value="fruits">Staples and Grains</option>
-          <option value="cannedFood">Beverages andCanned Foods</option>
-          <option value="oilsAndSpices">Meat and Sea foods</option>
+          <option value="foodstuffs">Foodstuffs</option>
+          <option value="fruitsAndVegetables">Fruits and Vegetables</option>
+          <option value="oilsAndSeasonings">Oils and Seasonings</option>
+          <option value="tubersAndGrains">Tubers and Grains</option>
+          <option value="beveragesAndCannedFoods">Beverages and Canned Foods</option>
+          <option value="meatAndSeaFoods">Meat and Sea foods</option>
         </select>
       </div>
       </div>
