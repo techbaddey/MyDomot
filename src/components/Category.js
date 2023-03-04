@@ -23,6 +23,17 @@ import pineapple from "../groceries/pineapple.jfif";
 import watermelon from "../groceries/watermelon.jpg";
 import strawberries from "../groceries/strawberries.jpg";
 
+import blackpepper from "../groceries/blackpepper.jpg";
+import chilli from "../groceries/chilli.jfif";
+import chillipepper from "../groceries/chillipepper.jfif";
+import curry from "../groceries/curry.jpg";
+import garlic from "../groceries/garlic.jpeg";
+import nutmeg from "../groceries/nutmeg.jpg";
+import redpepper from "../groceries/redpepper.jpg";
+import salt from "../groceries/salt.png";
+import scentleave from "../groceries/scentleave.jpg";
+import seasoning from "../groceries/seasoning.jpg";
+import thyme from "../groceries/thyme.jpg";
 
 import eggs from "../groceries/eggs.jpg";
 import tomatoes from "../groceries/tomatoes.jpeg";
@@ -150,7 +161,6 @@ const groceryList = [
     image: strawberries
   },
 ];
-
 
 const foodstuffs = [
   {
@@ -358,41 +368,110 @@ const fruitsAndVegetables = [
   }
 ];
 
-
 const oilsAndSeasonings = [
   {
-    name: "Apples",
-    price: "$1.50",
-    image: apple
+    name: "Vegetable Oil",
+    price: "₦ 700",
+    image: vegetableoil
   },
   {
-    name: "Grapes",
-    price: "$2.50",
-    image: grapes
+    name: "Palm Oil",
+    price: "₦ 850",
+    image: palmoil
   },
   {
-    name: "Bananas",
-    price: "$2.50",
-    image: banana
-  }
+    name: "Onions",
+    price: "₦ 600",
+    image: onions
+  },
+  {
+    name: "Bell Pepper",
+    price: "₦ 500",
+    image: bellpepper
+  },
+  {
+    name: "Crayfish",
+    price: "₦ 200",
+    image: crayfish
+  },
+  {
+    name: "Black Pepper",
+    price: "₦ 500",
+    image: blackpepper
+  },
+  {
+    name: "Chilli Pepper",
+    price: "₦ 700",
+    image: chilli
+  },
+  {
+    name: "Chilli Powder",
+    price: "₦ 300",
+    image: chillipepper
+  },
+  {
+    name: "Curry Powder",
+    price: "₦ 200",
+    image: curry
+  },
+  {
+    name: "Garlic",
+    price: "₦ 400",
+    image: garlic
+  },
+  {
+    name: "Nutmeg",
+    price: "₦ 300",
+    image: nutmeg
+  },
+  {
+    name: "Red Pepper",
+    price: "₦ 900",
+    image: redpepper
+  },
+  {
+    name: "Salt",
+    price: "₦ 250",
+    image: salt
+  },
+  {
+    name: "Scent Leaves",
+    price: "₦ 300",
+    image: scentleave
+  },
+  {
+    name: "Seasoning",
+    price: "₦ 200",
+    image: seasoning
+  },
+  {
+    name: "Thyme",
+    price: "₦ 250",
+    image: thyme
+  },
 ];
 
 const tubersAndGrains = [
   {
-    name: "Canned Soup",
-    price: "$4.00",
-    image: "soup.jpg"
+    name: "Coco Yam",
+    price: "₦ 1200",
+    image: cocoyam
   },
   {
-    name: "Canned Fruit",
-    price: "$3.50",
-    image: "fruit.jpg"
+    name: "Potatoes",
+    price: "₦ 500",
+    image: potatoes
   },
   {
-    name: "Canned Beans",
-    price: "$3.00",
-    image: "beans.jpg"
-  }
+    name: "Rice",
+    price: "₦ 9500",
+    image: rice
+  },
+  {
+    name: "Yam",
+    price: "₦ 1500",
+    image: yam
+  },
 ];
 
 const beveragesAndCannedFoods = [
@@ -401,16 +480,6 @@ const beveragesAndCannedFoods = [
     price: "$4.00",
     image: "soup.jpg"
   },
-  {
-    name: "Canned Fruit",
-    price: "$3.50",
-    image: "fruit.jpg"
-  },
-  {
-    name: "Canned Beans",
-    price: "$3.00",
-    image: "beans.jpg"
-  }
 ];
 
 const meatAndSeaFoods = [
@@ -419,16 +488,6 @@ const meatAndSeaFoods = [
     price: "$4.00",
     image: "soup.jpg"
   },
-  {
-    name: "Canned Fruit",
-    price: "$3.50",
-    image: "fruit.jpg"
-  },
-  {
-    name: "Canned Beans",
-    price: "$3.00",
-    image: "beans.jpg"
-  }
 ];
 
 const Category = () => {
