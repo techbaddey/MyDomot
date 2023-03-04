@@ -56,6 +56,11 @@ import vegetableoil from "../groceries/vegetableoil.jpg";
 import yam from "../groceries/yam.jpg";
 import yamflour from "../groceries/yamflour.png";
 
+import millet from "../groceries/millet.jpg";
+import cassava from "../groceries/cassava.png";
+import groundnut from "../groceries/groundnut.jpg";
+import garri from "../groceries/garri.jpg";
+
 
 
 
@@ -502,6 +507,26 @@ const tubersAndGrains = [
     price: "₦ 1500",
     image: beans
   },
+  {
+    name: "Millet",
+    price: "₦ 1500",
+    image: millet
+  },
+  {
+    name: "Cassava",
+    price: "₦ 1500",
+    image: cassava
+  },
+  {
+    name: "Garri",
+    price: "₦ 1500",
+    image: garri
+  },
+  {
+    name: "Groundnut",
+    price: "₦ 1500",
+    image: groundnut
+  },
 ];
 
 const beveragesAndCannedFoods = [
@@ -514,9 +539,14 @@ const beveragesAndCannedFoods = [
 
 const meatAndSeaFoods = [
   {
-    name: "Canned Soup",
-    price: "$4.00",
-    image: "soup.jpg"
+    name: "Crabs",
+    price: "₦ 500",
+    image: crabs
+  },
+  {
+    name: "Crayfish",
+    price: "₦ 200",
+    image: crayfish
   },
 ];
 
