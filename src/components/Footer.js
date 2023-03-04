@@ -11,12 +11,12 @@ function Footer() {
         <div class="footer-menu-item">
           <div class="footer-title">Categories</div>
           <ul class="footer-links">
-            <li><a href="#">Foodstuffs</a></li>
-            <li><a href="#">Soup & stew ingredients</a></li>
-            <li><a href="#">Fruits</a></li>
-            <li><a href="#">Meat, Poultry & Seafood</a></li>
-            <li><a href="#">Oils & Spices</a></li>
-            <li><a href="#">Canned Food</a></li>
+<li><a href="#">Foodstuffs </a> </li>
+<li><a href="#">Fruits and Vegetables </a> </li>
+<li><a href="#">Oils and Seasonings </a> </li>
+<li><a href="#">Tubers and Grains </a> </li>
+<li><a href="#">Beverages and Canned Foods </a> </li>
+<li><a href="#">Meat and Sea foods </a> </li>
           </ul>
         </div>
         <div class="footer-menu-item">

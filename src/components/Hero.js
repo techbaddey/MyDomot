@@ -11,7 +11,9 @@ import {
 import myDomot from "../assets/myDomotLogo.png";
 import login from "../assets/login.png";
 import signup from "../assets/signnup.jpeg";
+import Flowchart from "./Flowchart";
 import Category from "./Category";
+import Values from "./Values";
 import Footer from "./Footer";
 import About from "./About";
 import groceryOne from "../assets/grocery_one.png";
@@ -31,53 +33,50 @@ export const Navigation = () => {
         <button>SEARCH</button>
       </div>
       <nav className="desktop-nav">
-        <Link to="/" className="nav-link">
+      <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/">
         <FiHome className="icon" />
           Home
-        </Link>
-        <Link to="/aboutus" className="nav-link">
+        </NavLink>
+        <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/aboutus">
         <FiInfo className="icon" />
           About Us
-        </Link>
-        <Link to="/category" className="nav-link">
+          </NavLink>
+          <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/category">
         <FiList className="icon" />
           Category
-        </Link>
-        <Link to="/cart" className="nav-link">
+          </NavLink>
+          <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/cart">
         <FiShoppingCart className="icon" />
           Cart
           <div className="cart-count">0</div>
-        </Link>
-        <Link to="/login" className="nav-link">
+          </NavLink>
+          <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/login">
         <FiLogIn className="icon" />
           Login/SignUp
-        </Link>
-        {/* <Link to="/login" className="nav-link nav-btn">
-          Login/SignUp
-        </Link> */}
+          </NavLink>
       </nav>
       <nav className="mobile-nav">
-        <Link to="/" className="nav-link">
+      <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/">
           <FiHome className="icon" />
           Home
-        </Link>
-        <Link to="/aboutus" className="nav-link">
+        </NavLink>
+        <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/aboutus">
           <FiInfo className="icon" />
           About Us
-        </Link>
-        <Link to="/category" className="nav-link">
+        </NavLink>
+        <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/category">
           <FiList className="icon" />
           Category
-        </Link>
-        <Link to="/cart" className="nav-link">
+        </NavLink>
+        <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/cart">
           <FiShoppingCart className="icon" />
           Cart
           <div className="cart-count">0</div>
-        </Link>
-        <Link to="/login" className="nav-link">
+        </NavLink>
+        <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/login">
           <FiLogIn className="icon" />
           Login/SignUp
-        </Link>
+        </NavLink>
       </nav>
     </div>
   );
@@ -196,8 +195,9 @@ class Home extends React.Component {
             </button>
           </div>
         </div>
+        <Flowchart />
         <Category />
-        <Footer />
+        
       </>
     );
   }
