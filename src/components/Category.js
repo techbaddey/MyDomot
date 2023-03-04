@@ -60,9 +60,9 @@ const groceryList = [
     image: palmoil
   },
   {
-    name: "Plantain",
-    price: "₦ 350",
-    image: plantain
+    name: "Cucumber",
+    price: "₦ 850",
+    image: cucumber
   },
   {
     name: "Potatoes",
