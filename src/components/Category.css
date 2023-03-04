@@ -95,7 +95,7 @@
 .title {
   font-size: 18px;
   font-weight: bold;
-  color: #FFA845;
+  color: #4D8E4F;
   margin-bottom: 10px;
 }
 
@@ -103,10 +103,10 @@ select {
   width: 200px;
   font-size: 16px;
   font-weight: 500;
-  color: #FFA845;
+  color: #4D8E4F;
   cursor: pointer;
   background: transparent;
-  border: 2px solid #FFA845;
+  border: 2px solid #4D8E4F;
   padding: 1px;
   border-radius: 5px;
 }
@@ -141,14 +141,14 @@ select:focus {
   .title {
     font-size: 25px;
     font-weight: bold;
-    color: #FFA845;
+    color: #4D8E4F;
   }
   
   select {
     width: 270px;
     font-size: 18px;
     font-weight: 500;
-    color: #FFA845;
+    color: #4D8E4F;
     cursor: pointer;
   }
 
