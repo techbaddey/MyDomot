@@ -463,6 +463,26 @@ const tubersAndGrains = [
     image: potatoes
   },
   {
+    name: "Semovita",
+    price: "₦ 3500",
+    image: semovita
+  },
+  {
+    name: "Soybean",
+    price: "₦ 500",
+    image: soybean
+  },
+  {
+    name: "Carrots",
+    price: "₦ 200",
+    image: carrot
+  },
+  {
+    name: "Tiger Nut",
+    price: "₦ 200",
+    image: tigernut
+  },
+  {
     name: "Rice",
     price: "₦ 9500",
     image: rice
@@ -471,6 +491,16 @@ const tubersAndGrains = [
     name: "Yam",
     price: "₦ 1500",
     image: yam
+  },
+  {
+    name: "Onions",
+    price: "₦ 600",
+    image: onions
+  },
+  {
+    name: "Beans",
+    price: "₦ 1500",
+    image: beans
   },
 ];
 
@@ -528,7 +558,6 @@ const Category = () => {
       <div className="category-header">
       <p className="title">Shop by Category</p>
       <div className="input-container">
-        {/* <label>Category:</label> */}
         <select onChange={handleChange} value={selectedCategory}>
           <option value="">Select Category</option>
           <option value="foodstuffs">Foodstuffs</option>

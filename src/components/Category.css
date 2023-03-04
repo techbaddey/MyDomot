@@ -1,9 +1,10 @@
 .category-container {
-  background: #B5E5A5;
+  /* background: #B5E5A5; */
   margin: 65px 8px 0px 8px;
   border-radius: 9px;
   padding: 0.5px 0px;
   padding-bottom: 40px;
+  border: 2px solid #4D8E4F;
 }
 
 .container {
@@ -19,12 +20,13 @@
   display: inline-block;
   border-radius: 8px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
-  background: white;
+  background: transparent;
   transition: 0.3s;
   text-align: center;
   width: calc(50% - 10px);
   margin-right: 10px;
   padding-bottom: 15px;
+  border: 2px solid #4D8E4F;
 }
 
 .card:hover {
@@ -37,6 +39,7 @@
   height: 200px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-bottom: 2px solid #4D8E4F;
 }
 
 .card__content {
@@ -58,7 +61,7 @@
 }
 
 .card__button {
-  background-color: #FFA845;
+  background-color: #4D8E4F;
   border: none;
   color: white;
   padding: 8px;
@@ -73,7 +76,7 @@
 }
 
 .card__button:hover {
-  background-color: #FFA845;
+  background-color: #4D8E4F;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
   transform: scale(1.05);
   cursor: pointer;
@@ -81,7 +84,8 @@
 
 .category-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   width: 80%;
   margin: 0 auto;
   margin-top: 40px;
@@ -91,17 +95,18 @@
 .title {
   font-size: 18px;
   font-weight: bold;
-  color: #4D8E4F;
+  color: #FFA845;
+  margin-bottom: 10px;
 }
 
 select {
   width: 200px;
   font-size: 16px;
   font-weight: 500;
-  color: #4D8E4F;
+  color: #FFA845;
   cursor: pointer;
   background: transparent;
-  border: 2px solid #4D8E4F;
+  border: 2px solid #FFA845;
   padding: 1px;
   border-radius: 5px;
 }
@@ -136,14 +141,14 @@ select:focus {
   .title {
     font-size: 25px;
     font-weight: bold;
-    color: #4D8E4F;
+    color: #FFA845;
   }
   
   select {
     width: 270px;
     font-size: 18px;
     font-weight: 500;
-    color: #4D8E4F;
+    color: #FFA845;
     cursor: pointer;
   }
 

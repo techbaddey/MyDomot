@@ -23,6 +23,7 @@
   color: #FFA845;
   text-align: center;
   padding: 0px 15px;
+  font-weight: 500;
 }
 
 @media (max-width: 900px) {
