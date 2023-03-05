@@ -60,6 +60,19 @@ import millet from "../groceries/millet.jpg";
 import cassava from "../groceries/cassava.png";
 import groundnut from "../groceries/groundnut.jpg";
 import garri from "../groceries/garri.jpg";
+import beef from "../groceries/beef.jpg";
+import chicken from "../groceries/chicken.png";
+import cowskin from "../groceries/cowskin.jpg";
+import gizard from "../groceries/gizard.jpg";
+import lobster from "../groceries/lobster.jpg";
+import mackerel from "../groceries/mackerel.jpg";
+import periwinkle from "../groceries/periwinkle.jpg";
+import pork from "../groceries/pork.jpg";
+import prawn from "../groceries/prawn.jfif";
+import salmon from "../groceries/salmon.jpeg";
+import shrimp from "../groceries/shrimp.jpg";
+import tilapia from "../groceries/tilapia.jpg";
+
 
 
 
@@ -547,6 +560,66 @@ const meatAndSeaFoods = [
     name: "Crayfish",
     price: "₦ 200",
     image: crayfish
+  },
+  {
+    name: "Beef",
+    price: "₦ 700",
+    image: beef
+  },
+  {
+    name: "Chicken",
+    price: "₦ 1500",
+    image: chicken
+  },
+  {
+    name: "Cow Skin",
+    price: "₦ 600",
+    image: cowskin
+  },
+  {
+    name: "Gizzard",
+    price: "₦ 500",
+    image: gizard
+  },
+  {
+    name: "Lobster",
+    price: "₦ 700",
+    image: lobster
+  },
+  {
+    name: "Mackerel",
+    price: "₦ 400",
+    image: mackerel
+  },
+  {
+    name: "Periwinkle",
+    price: "₦ 200",
+    image: periwinkle
+  },
+  {
+    name: "Pork",
+    price: "₦ 500",
+    image: pork
+  },
+  {
+    name: "Prawn",
+    price: "₦ 400",
+    image: prawn
+  },
+  {
+    name: "Salmon Fish",
+    price: "₦ 750",
+    image: salmon
+  },
+  {
+    name: "Shrimp",
+    price: "₦ 400",
+    image: shrimp
+  },
+  {
+    name: "Tilapia Fish",
+    price: "₦ 800",
+    image: tilapia
   },
 ];
 
