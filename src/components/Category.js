@@ -73,6 +73,21 @@ import salmon from "../groceries/salmon.jpeg";
 import shrimp from "../groceries/shrimp.jpg";
 import tilapia from "../groceries/tilapia.jpg";
 
+import bournvita from "../groceries/bournvita.jpg";
+import butter from "../groceries/butter.jpg";
+import coke from "../groceries/coke.jpg";
+import cornedbeef from "../groceries/cornedbeef.jpg";
+import dano from "../groceries/dano.jpg";
+import geisha from "../groceries/geisha.jpg";
+import jam from "../groceries/jam.jfif";
+import lipton from "../groceries/lipton.jpg";
+import malt from "../groceries/malt.png";
+import milo from "../groceries/milo.png";
+import nescafe from "../groceries/nescafe.jpg";
+import sardine from "../groceries/sardine.jpg";
+import sweetcorn from "../groceries/sweetcorn.jpg";
+import tomatotin from "../groceries/tomatotin.jpg";
+
 
 
 
@@ -544,9 +559,74 @@ const tubersAndGrains = [
 
 const beveragesAndCannedFoods = [
   {
-    name: "Canned Soup",
-    price: "$4.00",
-    image: "soup.jpg"
+    name: "Bournvita",
+    price: "₦ 1200",
+    image: bournvita
+  },
+  {
+    name: "Butter",
+    price: "₦ 1200",
+    image: butter
+  },
+  {
+    name: "Coca Cola",
+    price: "₦ 1200",
+    image: coke 
+  },
+  {
+    name: "Corned Beef",
+    price: "₦ 1200",
+    image: cornedbeef
+  },
+  {
+    name: "Dano Milk",
+    price: "₦ 1200",
+    image: dano
+  },
+  {
+    name: "Geisha",
+    price: "₦ 1200",
+    image: geisha
+  },
+  {
+    name: "Tin Tomatoes",
+    price: "₦ 1200",
+    image: tomatotin  
+  },
+  {
+    name: "Jam",
+    price: "₦ 1200",
+    image: jam
+  },
+  {
+    name: "Lipton Tea",
+    price: "₦ 1200",
+    image: lipton
+  },
+  {
+    name: "Malta Guiness",
+    price: "₦ 1200",
+    image: malt
+  },
+  {
+    name: "Milo",
+    price: "₦ 1200",
+    image: milo
+  },
+  {
+    name: "Nescafe",
+    price: "₦ 1200",
+    image: nescafe
+  },
+  {
+    name: "Sardine",
+    price: "₦ 1200",
+    image: sardine
+  },
+  {
+    name: "Sweet Corn",
+    price: "₦ 1200",
+    image: sweetcorn
   },
 ];
 
