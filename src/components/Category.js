@@ -761,10 +761,10 @@ const Category = () => {
               alt={grocery.name}
             />
             <div className="card__content">
-              <h3 className="card__title">{grocery.name}</h3>
+              <p className="card__title">{grocery.name}</p>
               <p className="card__price">{grocery.price}</p>
             </div>
-            <button className="card__button">Add to Cart</button>
+            {/* <button className="card__button">Add to Cart</button> */}
           </div>
         ))}
       </div>

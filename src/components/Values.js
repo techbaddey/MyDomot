@@ -8,6 +8,8 @@ import convenient from "../assets/convenient.png";
 function Values() {
     return (
         <>
+        <div className='val-container'>
+        <h6 className='values-title'>What We Offer</h6>
         <div className='values-container'>
          <div className='values'>
         <img src={freshproduct} alt="freshproduct" className="value-img" />
@@ -20,6 +22,7 @@ function Values() {
         <div className='values'>
         <img src={convenient} alt="convenient" className="value-img" />
         <p>Convenient Shopping</p>
+        </div>
         </div>
         </div>
         </>

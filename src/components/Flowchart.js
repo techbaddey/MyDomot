@@ -8,6 +8,8 @@ import doordelivery from "../assets/doordelivery.png";
 function Flowchart() {
     return (
         <>
+        <div className='flow-container'>
+        <h6 className='flowchart-title'>How it works</h6>
         <div className='flowchart-container'>
          <div className='flow'>
         <img src={createaccount} alt="createaccount" className="flowchart" />
@@ -20,6 +22,7 @@ function Flowchart() {
         <div className='flow'>
         <img src={doordelivery} alt="doordelivery" className="flowchart" />
         <p>Make payments and get your groceries delivered to your doorstep</p>
+        </div>
         </div>
         </div>
         </>

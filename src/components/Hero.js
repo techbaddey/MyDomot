@@ -33,47 +33,47 @@ export const Navigation = () => {
         <button>SEARCH</button>
       </div>
       <nav className="desktop-nav">
-      <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/">
+      <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/">
         <FiHome className="icon" />
           Home
         </NavLink>
-        <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/aboutus">
+        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/aboutus">
         <FiInfo className="icon" />
           About Us
           </NavLink>
-          <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/category">
+          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/category">
         <FiList className="icon" />
           Category
           </NavLink>
-          <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/cart">
+          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/cart">
         <FiShoppingCart className="icon" />
           Cart
           <div className="cart-count">0</div>
           </NavLink>
-          <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/login">
+          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/login">
         <FiLogIn className="icon" />
           Login/SignUp
           </NavLink>
       </nav>
       <nav className="mobile-nav">
-      <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/">
+      <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/">
           <FiHome className="icon" />
           Home
         </NavLink>
-        <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/aboutus">
+        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/aboutus">
           <FiInfo className="icon" />
           About Us
         </NavLink>
-        <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/category">
+        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/category">
           <FiList className="icon" />
           Category
         </NavLink>
-        <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/cart">
+        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/cart">
           <FiShoppingCart className="icon" />
           Cart
           <div className="cart-count">0</div>
         </NavLink>
-        <NavLink style={({ isActive }) => isActive ? { color: "#4D8E4F" } : { color: "#828282" }} className="nav-link" to="/login">
+        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/login">
           <FiLogIn className="icon" />
           Login/SignUp
         </NavLink>
@@ -124,7 +124,7 @@ class Home extends React.Component {
         <Navigation />
         
         <div className="slider-container">
-          <h2>Grocery Shopping Made Easy</h2>
+          {/* <h2>Grocery Shopping Made Easy</h2> */}
           <div className="slider">
             
             {slides.map((slide, index) => {
@@ -202,35 +202,6 @@ class Home extends React.Component {
     );
   }
 }
-
-// export const Home = () => {
-//   return (
-//     <>
-//       <Navigation />
-//       <div className="hero">
-//         <div className="hero-section">
-//           {/* <img src={domotHero} alt="myDomot" className="hero-img" /> */}
-//           <div class="hero-section-content">
-//             <h1>Grocery Shopping Made Easy</h1>
-//             <p>
-//               Get Your Groceries Delivered Easily and Affordably with{" "}
-//               <span className="mydomot">My Domot</span>
-//             </p>
-//             <p>
-//               Say goodbye to tedious grocery shopping. Let our experienced
-//               shoppers bring the groceries you need right to your doorstep, so
-//               you can enjoy more time doing the things you love.
-//             </p>
-//             <button className="btn-one">Shop Online</button>
-//             <button className="btn-two">Get an Offline Shopper</button>
-//           </div>
-//         </div>
-//       </div>
-//       <Category />
-//       <Footer />
-//     </>
-//   );
-// };
 
 class SignupPage extends React.Component {
   constructor(props) {
