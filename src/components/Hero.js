@@ -24,6 +24,8 @@ import groceryThree from "../assets/grocery_three.png";
 import groceryFour from "../assets/grocery_four.png";
 import groceryFive from "../assets/grocery_five.png";
 import grocerySix from "../assets/grocery_six.png";
+import grocerySeven from "../assets/grocery_seven.png";
+
 
 export const Navigation = () => {
   return (
@@ -99,28 +101,29 @@ class Home extends React.Component {
   }
 
   render() {
-    const slides = [
+    const slides = [ 
       {
-        image: groceryTwo,
+        image: groceryThree,
+        text: "Shop from a wide selection of food, fruits, and more.",
+        subtext: "We are your one-stop shop for all your grocery needs. Make a grocery list and we'll take care of the rest. We'll make sure you get everything you need in one convenient doorstep delivery.",
+        btnText: "About MyDomot",
+        imagetwo: grocerySix,
+      },
+      {
+        image: groceryOne,
         text: "Get Your Groceries Delivered Easily and Affordably with MyDomot",
         subtext: "Say goodbye to tedious grocery shopping. Let our experienced shoppers bring the groceries you need right to your doorstep, so  you can enjoy more time doing the things you love.",
-        btnText: "Shop Online",
-        imagetwo: groceryFive,
+        btnText: "Ramadan",
+        imagetwo: grocerySeven,
       },
       {
         image: groceryFour,
         text: "Get a personal shopper to do the grocery shopping for you",
         subtext: "Let one of our trained shopping experts take the hassle out of grocery shopping. Our shopper will take your list, shop for you, and deliver the groceries right to your doorstep.",
-        btnText: "Get an Offline Shoppper",
-        imagetwo: groceryOne,
+        btnText: "Become a Shopper",
+        imagetwo: groceryTwo,
       },
-      {
-        image: groceryThree,
-        text: "Shop from a wide selection of food, fruits, and more.",
-        subtext: "We are your one-stop shop for all your grocery needs. Make a grocery list and we'll take care of the rest. We'll make sure you get everything you need in one convenient doorstep delivery.",
-        btnText: "Make a List",
-        imagetwo: grocerySix,
-      },
+     
     ];
 
     return (

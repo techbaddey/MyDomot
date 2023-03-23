@@ -3,7 +3,7 @@ import '../components/Grocery.css'
 import {
   FiArrowRight,
 } from "react-icons/fi";
-import { NavLink, Link, Routes, Route } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import apple from "../groceries/apples.jfif";
 import banana from "../groceries/banana.jpeg";
 import bellpepper from "../groceries/bellpepper.jpg";
@@ -42,32 +42,38 @@ import Category from './Category';
 const foodstuffs = [
     {
       name: "Eggs",
-      price: "₦ 700",
+      quantity: "1 crate",
+      price: "₦ 700 - ₦ 1000",
       image: eggs
     },
     {
       name: "Tomatoes",
-      price: "₦ 500",
+      quantity: "25g basket",
+      price: "₦ 500 - ₦ 1200",
       image: tomatoes
     },
     {
       name: "Onions",
-      price: "₦ 600",
+      quantity: "30g basket",
+      price: "₦ 600 - ₦ 800",
       image: onions
     },
     {
       name: "Beans",
-      price: "₦ 1500",
+      quantity: "1 plastic",
+      price: "₦ 1500 - ₦ 2000",
       image: beans
     },
     {
       name: "Bitter Leaf",
-      price: "₦ 600",
+      quantity: "15g",
+      price: "₦ 600 - ₦ 800",
       image: bitterleaf
     },
     {
       name: "Coco Yam",
-      price: "₦ 1200",
+      quantity: "15 tubers",
+      price: "₦ 1200 - ₦ 1500",
       image: cocoyam
     },
   ];
@@ -76,32 +82,38 @@ const foodstuffs = [
 const fruitsAndVegetables = [
     {
       name: "Carrots",
-      price: "₦ 200",
+      quantity: "1 dozen",
+      price: "₦ 200 - ₦ 500",
       image: carrot
     },
     {
       name: "Apples",
-      price: "₦ 500",
+      quantity: "2 dozens",
+      price: "₦ 500 - ₦ 700",
       image: apple
     },
     {
       name: "Banana",
-      price: "₦ 600",
+      quantity: "1 dozen",
+      price: "₦ 600 - ₦ 800",
       image: banana
     },
     {
       name: "Bell Pepper",
-      price: "₦ 500",
+      quantity: "25g basket",
+      price: "₦ 500 - ₦ 700",
       image: bellpepper
     },
     {
       name: "Cashew",
-      price: "₦ 400",
+      quantity: "14g",
+      price: "₦ 400 - ₦ 600",
       image: cashew
     },
     {
       name: "Dates",
-      price: "₦ 200",
+      quantity: "1 dozen",
+      price: "₦ 200 - ₦ 500",
       image: date
     },
   ];
@@ -109,32 +121,38 @@ const fruitsAndVegetables = [
   const oilsAndSeasonings = [
     {
       name: "Vegetable Oil",
-      price: "₦ 700",
+      quantity: "5kg",
+      price: "₦ 700 - ₦ 1000",
       image: vegetableoil
     },
     {
       name: "Palm Oil",
-      price: "₦ 850",
+      quantity: "2kg",
+      price: "₦ 850 - ₦ 1200",
       image: palmoil
     },
     {
       name: "Onions",
-      price: "₦ 600",
+      quantity: "30g basket",
+      price: "₦ 600 - ₦ 800",
       image: onions
     },
     {
       name: "Bell Pepper",
-      price: "₦ 500",
+      quantity: "25g basket",
+      price: "₦ 500 - ₦ 700",
       image: bellpepper
     },
     {
       name: "Crayfish",
-      price: "₦ 200",
+      quantity: "15g",
+      price: "₦ 200 - ₦ 500",
       image: crayfish
     },
     {
       name: "Black Pepper",
-      price: "₦ 500",
+      quantity: "1kg",
+      price: "₦ 500 - ₦ 700",
       image: blackpepper
     },
   ];
@@ -142,32 +160,38 @@ const fruitsAndVegetables = [
   const tubersAndGrains = [
     {
       name: "Coco Yam",
-      price: "₦ 1200",
+      quantity: "15 tubers",
+      price: "₦ 1200 - ₦ 1500",
       image: cocoyam
     },
     {
       name: "Potatoes",
-      price: "₦ 500",
+      quantity: "10 tubers",
+      price: "₦ 500 - ₦ 700",
       image: potatoes
     },
     {
       name: "Semovita",
-      price: "₦ 3500",
+      quantity: "5kg",
+      price: "₦ 3500 - ₦ 4000",
       image: semovita
     },
     {
       name: "Soybean",
-      price: "₦ 500",
+      quantity: "1kg",
+      price: "₦ 500 - ₦ 700",
       image: soybean
     },
     {
       name: "Carrots",
-      price: "₦ 200",
+      quantity: "1 dozen",
+      price: "₦ 200 - ₦ 500",
       image: carrot
     },
     {
       name: "Tiger Nut",
-      price: "₦ 200",
+      quantity: "25g",
+      price: "₦ 200 - ₦ 500",
       image: tigernut
     },
   ];
@@ -175,32 +199,38 @@ const fruitsAndVegetables = [
   const beveragesAndCannedFoods = [
     {
       name: "Bournvita",
-      price: "₦ 1200",
+      quantity: "1 pack",
+      price: "₦ 1200 - ₦ 1500",
       image: bournvita
     },
     {
       name: "Butter",
-      price: "₦ 1200",
+      quantity: "3 packs",
+      price: "₦ 1200 - ₦ 1600",
       image: butter
     },
     {
       name: "Coca Cola",
-      price: "₦ 1200",
+      quantity: "1 pack",
+      price: "₦ 1200 - ₦ 1800",
       image: coke 
     },
     {
       name: "Corned Beef",
-      price: "₦ 1200",
+      quantity: "2 tins",
+      price: "₦ 1200 - ₦ 1400",
       image: cornedbeef
     },
     {
       name: "Dano Milk",
-      price: "₦ 1200",
+      quantity: "2 tins",
+      price: "₦ 800 - ₦ 1000",
       image: dano
     },
     {
       name: "Geisha",
-      price: "₦ 1200",
+      quantity: "5 tins",
+      price: "₦ 500 - ₦ 700",
       image: geisha
     },
   ];
@@ -208,32 +238,38 @@ const fruitsAndVegetables = [
   const meatAndSeaFoods = [
     {
       name: "Crabs",
-      price: "₦ 500",
+      quantity: "1 dozen",
+      price: "₦ 500 - ₦ 700",
       image: crabs
     },
     {
       name: "Crayfish",
-      price: "₦ 200",
+      quantity: "15g",
+      price: "₦ 200 - ₦ 500",
       image: crayfish
     },
     {
       name: "Beef",
-      price: "₦ 700",
+      quantity: "1kg",
+      price: "₦ 700 - ₦ 1000",
       image: beef
     },
     {
       name: "Chicken",
-      price: "₦ 1500",
+      quantity: "2kg",
+      price: "₦ 1500 - ₦ 2000",
       image: chicken
     },
     {
       name: "Cow Skin",
-      price: "₦ 600",
+      quantity: "200g",
+      price: "₦ 600 - ₦ 800",
       image: cowskin
     },
     {
       name: "Gizzard",
-      price: "₦ 500",
+      quantity: "1kg",
+      price: "₦ 500 - ₦ 700",
       image: gizard
     },
   ];
@@ -246,7 +282,8 @@ export default function Grocery() {
       <Link to="/category">
         <button>SEE ALL<span><FiArrowRight /></span></button>
         </Link>
-        </div>
+        </div> 
+        <p className='price-range'>Price range of Foodstuffs in Lagos Markets</p>
       <div className="cardall">
       {foodstuffs.map(item => (
             <div className="card">
@@ -257,6 +294,7 @@ export default function Grocery() {
             />
             <div className="card__content">
               <p className="card__title">{item.name}</p>
+              <p className="card__quantity">{item.quantity}</p>
               <p className="card__price">{item.price}</p>
             </div>
             </div>
@@ -268,6 +306,7 @@ export default function Grocery() {
         <button>SEE ALL<span><FiArrowRight /></span></button>
         </Link>
         </div>
+        <p className='price-range'>Price range of Fruits and Vegetables in Lagos Markets</p>
         <div className="cardall">
           {fruitsAndVegetables.map(item => (
             <div className="card">
@@ -278,6 +317,7 @@ export default function Grocery() {
             />
             <div className="card__content">
               <p className="card__title">{item.name}</p>
+              <p className="card__quantity">{item.quantity}</p>
               <p className="card__price">{item.price}</p>
             </div>
             </div>
@@ -289,6 +329,7 @@ export default function Grocery() {
         <button>SEE ALL<span><FiArrowRight /></span></button>
         </Link>
         </div>
+        <p className='price-range'>Price range of Oils and Seasonings in Lagos Markets</p>
         <div className="cardall">
           {oilsAndSeasonings.map(item => (
             <div className="card">
@@ -299,6 +340,7 @@ export default function Grocery() {
             />
             <div className="card__content">
               <p className="card__title">{item.name}</p>
+              <p className="card__quantity">{item.quantity}</p>
               <p className="card__price">{item.price}</p>
             </div>
             </div>
@@ -310,6 +352,7 @@ export default function Grocery() {
         <button>SEE ALL<span><FiArrowRight /></span></button>
         </Link>
         </div>
+        <p className='price-range'>Price range of Tubers and Grains in Lagos Markets</p>
         <div className="cardall">
           {tubersAndGrains.map(item => (
            <div className="card">
@@ -320,6 +363,7 @@ export default function Grocery() {
            />
            <div className="card__content">
              <p className="card__title">{item.name}</p>
+             <p className="card__quantity">{item.quantity}</p>
              <p className="card__price">{item.price}</p>
            </div>
            </div>
@@ -331,6 +375,7 @@ export default function Grocery() {
         <button>SEE ALL<span><FiArrowRight /></span></button>
         </Link>
         </div>
+        <p className='price-range'>Price range of Beverages and Canned Foods in Lagos Markets</p>
         <div className="cardall">
           {beveragesAndCannedFoods.map(item => (
            <div className="card">
@@ -341,6 +386,7 @@ export default function Grocery() {
            />
            <div className="card__content">
              <p className="card__title">{item.name}</p>
+             <p className="card__quantity">{item.quantity}</p>
              <p className="card__price">{item.price}</p>
            </div>
            </div>
@@ -351,7 +397,8 @@ export default function Grocery() {
       <Link to="/category">
         <button>SEE ALL<span><FiArrowRight /></span></button>
         </Link>
-        </div>
+        </div> 
+        <p className='price-range'>Price range of Meats and Seafoods in Lagos Markets</p>
         <div className="cardall">
           {meatAndSeaFoods.map(item => (
            <div className="card">
@@ -362,6 +409,7 @@ export default function Grocery() {
            />
            <div className="card__content">
              <p className="card__title">{item.name}</p>
+             <p className="card__quantity">{item.quantity}</p>
              <p className="card__price">{item.price}</p>
            </div>
            </div>

@@ -585,6 +585,17 @@ body {
     padding: 2.2px;
   }
 
+  .slider-container {
+    width: 94%;
+    height: 85vh;
+    background-color: #FFA845;
+    border-radius: 9px;
+    padding: 20px 8px 0px 8px;
+    margin: 65px auto 0px auto;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%);
+  }
+  
+
   .slider-container h2 {
     text-align: center;
     /* margin-right: 11%; */
