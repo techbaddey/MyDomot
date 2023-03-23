@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
 
 * {
   margin: 0;
@@ -415,7 +417,7 @@ body {
 .slide-text {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 1;
   font-size: 16px;
   padding: 20px;
   background: rgba(0, 0, 0, 0.3);
@@ -446,20 +448,31 @@ body {
 
 .slide-text .first-text {
   margin-bottom: 8px;
+  background-color: #B3561B;
+  padding: 5px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: 500;
+}
+
+.slide-text .second-text {
+  color: #fff;
+  font-weight: 700;
 }
 
 .slide-btn {
-  background:  #B3561B;
+  font-family: 'Tangerine', cursive;
+  background:  black;
   color: #fff;
   border: 0;
-  padding: 8px 10px;
+  padding: 5px 7px;
   border-radius: 5px;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 25px;
+  /* text-transform: uppercase; */
+  letter-spacing: 3px;
   font-weight: bold;
   cursor: pointer;
-  margin-top: 8px;
+  margin-bottom: 7px;
 }
 
 
@@ -481,7 +494,7 @@ body {
 }
 
 .slider-nav-btn.active {
-  background: #B3561B;
+  background: black;
 }
 
 .slider-arrows {
@@ -492,7 +505,7 @@ body {
 .slider-arrow-btn {
   position: relative;
   top: -40vh;
-  background: #B3561B;
+  background: black;
   color: #fff;
   border: 0;
   padding: 6px 8px;

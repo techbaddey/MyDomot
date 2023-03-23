@@ -104,23 +104,26 @@ class Home extends React.Component {
     const slides = [ 
       {
         image: groceryThree,
-        text: "Shop from a wide selection of food, fruits, and more.",
+        btnText: "Shop With MyDomot Today",
+        text: "We are ONLY operating in Lagos, Nigeria at the moment.",
         subtext: "We are your one-stop shop for all your grocery needs. Make a grocery list and we'll take care of the rest. We'll make sure you get everything you need in one convenient doorstep delivery.",
-        btnText: "About MyDomot",
+        
         imagetwo: grocerySix,
       },
       {
         image: groceryOne,
-        text: "Get Your Groceries Delivered Easily and Affordably with MyDomot",
-        subtext: "Say goodbye to tedious grocery shopping. Let our experienced shoppers bring the groceries you need right to your doorstep, so  you can enjoy more time doing the things you love.",
-        btnText: "Ramadan",
+        btnText: "Ramadan Kareem",
+        text: "Get Your Groceries Delivered Easily and Affordably this Ramadan.",
+        subtext: "Say goodbye to tedious grocery shopping. Let our experienced shoppers bring the groceries you need right to your doorstep, so  you can enjoy more time doing the things you love this Ramadan.",
+        
         imagetwo: grocerySeven,
       },
       {
         image: groceryFour,
-        text: "Get a personal shopper to do the grocery shopping for you",
-        subtext: "Let one of our trained shopping experts take the hassle out of grocery shopping. Our shopper will take your list, shop for you, and deliver the groceries right to your doorstep.",
         btnText: "Become a Shopper",
+        text: "Earn Money With MyDomot: Become a Shopper And Make It Happen!",
+        subtext: "Apply today, to become one of our professionally trained shoppers, make money while helping others enjoy the Flexibility and Security of Shopping at Home with MyDomot.",
+        
         imagetwo: groceryTwo,
       },
      
@@ -140,17 +143,20 @@ class Home extends React.Component {
                 <>
             
                 <div className={slideClasses} key={index}>
+                  
                   <img src={slide.image} alt={slide.text} />
                   <img src={slide.imagetwo} alt={slide.text} className="web-image-two" />
+                  
                   <div className="slide-text">
-                    <p className="first-text">{slide.text}</p>
-                    <p>{slide.subtext}</p>
                     <button
                       onClick={() => this.handleSlideChange(index)}
                       className="slide-btn"
                     >
                       {slide.btnText}
                     </button>
+                    <p className="first-text">{slide.text}</p>
+                    <p className="second-text">{slide.subtext}</p>
+                    
                   </div>
                 </div>
                 </>
@@ -199,16 +205,10 @@ class Home extends React.Component {
             </button>
           </div>
         </div>
-        {/* <div className="card-container">
-        <div className="card-one">get 20% off every order you make in March</div>
-        <div className="card-two">get 30% off every order you make in March</div>
-        </div> */}
-       
         <Flowchart />
         <Grocery />
         <Values />
         <Footer />
-        
       </>
     );
   }
