@@ -4,9 +4,9 @@ import {
   FiHome,
   FiShoppingCart,
   FiLogIn,
-  FiInfo,
   FiList,
   FiSearch,
+  FiClock,
 } from "react-icons/fi";
 import myDomot from "../assets/myDomotLogo.png";
 import login from "../assets/login.png";
@@ -17,6 +17,7 @@ import Grocery from "./Grocery";
 import Values from "./Values";
 import Footer from "./Footer";
 import About from "./About";
+import Tracker from "./Tracker";
 import groceryOne from "../assets/grocery_one.png";
 import groceryTwo from "../assets/grocery_two.png";
 import groceryThree from "../assets/grocery_three.png";
@@ -38,10 +39,6 @@ export const Navigation = () => {
         <FiHome className="icon" />
           Home
         </NavLink>
-        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/aboutus">
-        <FiInfo className="icon" />
-          About Us
-          </NavLink>
           <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/category">
         <FiList className="icon" />
           Category
@@ -51,7 +48,11 @@ export const Navigation = () => {
           Cart
           <div className="cart-count">0</div>
           </NavLink>
-          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/login">
+          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/tracker">
+        <FiClock className="icon" />
+          Tracker
+          </NavLink>
+            <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/login">
         <FiLogIn className="icon" />
           Login/SignUp
           </NavLink>
@@ -61,10 +62,7 @@ export const Navigation = () => {
           <FiHome className="icon" />
           Home
         </NavLink>
-        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/aboutus">
-          <FiInfo className="icon" />
-          About Us
-        </NavLink>
+       
         <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/category">
           <FiList className="icon" />
           Category
@@ -74,15 +72,18 @@ export const Navigation = () => {
           Cart
           <div className="cart-count">0</div>
         </NavLink>
-        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/login">
-          <FiLogIn className="icon" />
-          Login/SignUp
+         <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/tracker">
+          <FiClock className="icon" />
+          Tracker
         </NavLink>
+            <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/login">
+        <FiLogIn className="icon" />
+          Login/SignUp
+          </NavLink>
       </nav>
     </div>
   );
 };
-
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -369,6 +370,7 @@ function Path() {
       <Route path="/" element={<Home />} />
       <Route path="/aboutus" element={<About />} />
       <Route path="/category" element={<Category />} />
+      <Route path="/tracker" element={<Tracker />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/login" element={<LoginPage />} />
     </Routes>

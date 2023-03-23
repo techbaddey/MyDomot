@@ -62,7 +62,7 @@ body {
 
 .login-signup label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .login-signup label span {
@@ -73,9 +73,20 @@ body {
   display: block;
   margin-bottom: 15px;
   width: 100%;
-  padding: 10px;
+  padding: 7px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.login-signup select {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: #828282;
 }
 
 .login-signup input::placeholder {
@@ -93,7 +104,7 @@ body {
   font-weight: 700;
   border: none;
   cursor: pointer;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .login-signup input[type="submit"]:hover {
@@ -104,7 +115,7 @@ body {
   display: flex;
   justify-content: end;
   margin-top: -14px;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
   text-decoration: none;
   color: #FFA845;
 }
@@ -141,14 +152,14 @@ body {
 .login-signup .p-three {
   color: black;
   font-size: 22px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-weight: 500;
 }
 
 .login-signup .p-four {
   color: #828282;
   font-weight: 500;
-  margin-top: 27px;
+  margin-top: 12px;
 }
 
 .mobile-nav {

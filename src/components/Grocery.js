@@ -3,6 +3,7 @@ import '../components/Grocery.css'
 import {
   FiArrowRight,
 } from "react-icons/fi";
+import { NavLink, Link, Routes, Route } from "react-router-dom";
 import apple from "../groceries/apples.jfif";
 import banana from "../groceries/banana.jpeg";
 import bellpepper from "../groceries/bellpepper.jpg";
@@ -34,6 +35,7 @@ import eggs from "../groceries/eggs.jpg";
 import tomatoes from "../groceries/tomatoes.jpeg";
 import beans from "../groceries/beans.jfif";
 import bitterleaf from "../groceries/bitterleaf.jpg";
+import Category from './Category';
 
 
 
@@ -239,11 +241,13 @@ const fruitsAndVegetables = [
 export default function Grocery() {
     return (
       <> 
-      <div className='card-head'>
+      <div className='card-head head-one'>
       <h2>Food stuffs</h2>
+      <Link to="/category">
         <button>SEE ALL<span><FiArrowRight /></span></button>
+        </Link>
         </div>
-      <div className="cardone cardall">
+      <div className="cardall">
       {foodstuffs.map(item => (
             <div className="card">
             <img
@@ -258,12 +262,13 @@ export default function Grocery() {
             </div>
              ))}
              </div> 
-             <div className='card-head'>
+             <div className='card-head head-two'>
       <h2>Fruits and Vegetables</h2>
-        <button>SEE ALL</button>
+      <Link to="/category">
+        <button>SEE ALL<span><FiArrowRight /></span></button>
+        </Link>
         </div>
-        <div className='cardtwo cardall'>
-       
+        <div className="cardall">
           {fruitsAndVegetables.map(item => (
             <div className="card">
             <img
@@ -278,12 +283,13 @@ export default function Grocery() {
             </div>
              ))}
         </div> 
-        <div className='card-head'>
+        <div className='card-head head-three'>
       <h2>Oils and Seasonings</h2>
-        <button>SEE ALL</button>
+      <Link to="/category">
+        <button>SEE ALL<span><FiArrowRight /></span></button>
+        </Link>
         </div>
-        <div className='cardthree cardall'>
-       
+        <div className="cardall">
           {oilsAndSeasonings.map(item => (
             <div className="card">
             <img
@@ -298,12 +304,13 @@ export default function Grocery() {
             </div>
              ))}
         </div>
-        <div className='card-head'>
+        <div className='card-head head-four'>
       <h2>Tubers and Grains</h2>
-        <button>SEE ALL</button>
+      <Link to="/category">
+        <button>SEE ALL<span><FiArrowRight /></span></button>
+        </Link>
         </div>
-        <div className='cardfour cardall'>
-        
+        <div className="cardall">
           {tubersAndGrains.map(item => (
            <div className="card">
            <img
@@ -318,12 +325,13 @@ export default function Grocery() {
            </div>
             ))}
         </div> 
-        <div className='card-head'>
+        <div className='card-head head-five'>
       <h2>Beverages and Canned Foods</h2>
-        <button>SEE ALL</button>
+      <Link to="/category">
+        <button>SEE ALL<span><FiArrowRight /></span></button>
+        </Link>
         </div>
-        <div className='cardfive cardall'>
-       
+        <div className="cardall">
           {beveragesAndCannedFoods.map(item => (
            <div className="card">
            <img
@@ -338,12 +346,13 @@ export default function Grocery() {
            </div>
             ))}
         </div>
-        <div className='card-head'>
+        <div className='card-head head-six'>
       <h2>Meat and Seafoods</h2>
-        <button>SEE ALL</button>
+      <Link to="/category">
+        <button>SEE ALL<span><FiArrowRight /></span></button>
+        </Link>
         </div>
-        <div className='cardsix cardall'>
-        
+        <div className="cardall">
           {meatAndSeaFoods.map(item => (
            <div className="card">
            <img
@@ -361,3 +370,7 @@ export default function Grocery() {
       </>
     );
   }
+
+ 
+ <Route path="/category" element={<Category />} />
+       

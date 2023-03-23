@@ -9,7 +9,7 @@ function Flowchart() {
     return (
         <>
         <div className='flow-container'>
-        <h6 className='flowchart-title'>How it works</h6>
+        <h2 className='flowchart-title'>How it works</h2>
         <div className='flowchart-container'>
          <div className='flow'>
         <img src={createaccount} alt="createaccount" className="flowchart" />

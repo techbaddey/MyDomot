@@ -9,7 +9,7 @@ function Values() {
     return (
         <>
         <div className='val-container'>
-        <h6 className='values-title'>What We Offer</h6>
+        <h2 className='values-title'>What We Offer</h2>
         <div className='values-container'>
          <div className='values'>
         <img src={freshproduct} alt="freshproduct" className="value-img" />
