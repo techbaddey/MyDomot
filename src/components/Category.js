@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import '../components/Category.css';
 import { Navigation } from './Hero';
-import Values from "./Values";
 import Footer from './Footer';
 import apple from "../groceries/apples.jfif";
 import banana from "../groceries/banana.jpeg";
@@ -769,7 +768,6 @@ const Category = () => {
         ))}
       </div>
       </div>
-      <Values />
       <Footer />
     </>
   );

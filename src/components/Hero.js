@@ -13,6 +13,7 @@ import login from "../assets/login.png";
 import signup from "../assets/signnup.jpeg";
 import Flowchart from "./Flowchart";
 import Category from "./Category";
+import Grocery from "./Grocery";
 import Values from "./Values";
 import Footer from "./Footer";
 import About from "./About";
@@ -122,7 +123,7 @@ class Home extends React.Component {
     return (
       <>
         <Navigation />
-        
+        <div className="ad-container">
         <div className="slider-container">
           {/* <h2>Grocery Shopping Made Easy</h2> */}
           <div className="slider">
@@ -195,8 +196,15 @@ class Home extends React.Component {
             </button>
           </div>
         </div>
+        <div className="card-container">
+        <div className="card-one">get 20% off every order you make in March</div>
+        <div className="card-two">get 30% off every order you make in March</div>
+        </div>
+        </div>
         <Flowchart />
-        <Category />
+        <Grocery />
+        <Values />
+        <Footer />
         
       </>
     );

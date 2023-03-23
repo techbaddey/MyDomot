@@ -1,0 +1,90 @@
+.card {
+    border-radius: 8px;
+    background: transparent;
+    text-align: center;
+    height: 255px;
+    width: 185px;
+    margin: 7px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  
+  .card__image {
+    width: 185px;
+    height: 185px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  .card__content {
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  .card__title {
+    font-size: 1rem;
+    color: #212121;
+  }
+  
+  .card__price {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #212121;
+  }
+
+  .card-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4D8E4F;
+    color: white;
+    font-size: 20px;
+    padding: 5px 8px 8px 8px;
+    border-radius: 8px 8px 0px 0px;
+    /* margin: 0 auto;
+    margin-top: 40px; */
+    margin: 0px 15px;
+  }
+
+  .card-head h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .card-head button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: .875rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .card-head button span {
+    margin: 5px;
+    color: white;
+  }
+
+  .cardall {
+    background: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%);
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin: 0 auto; */
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px 0px 8px 8px;
+  margin: 0px 15px;
+  margin-bottom: 30px;
+  }
