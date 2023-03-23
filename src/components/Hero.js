@@ -43,14 +43,15 @@ export const Navigation = () => {
         <FiList className="icon" />
           Category
           </NavLink>
+         
+          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/tracker">
+        <FiClock className="icon" />
+          Tracker
+          </NavLink> 
           <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/cart">
         <FiShoppingCart className="icon" />
           Cart
           <div className="cart-count">0</div>
-          </NavLink>
-          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/tracker">
-        <FiClock className="icon" />
-          Tracker
           </NavLink>
             <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/login">
         <FiLogIn className="icon" />
@@ -67,14 +68,15 @@ export const Navigation = () => {
           <FiList className="icon" />
           Category
         </NavLink>
+        
+         <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/tracker">
+          <FiClock className="icon" />
+          Tracker
+        </NavLink>
         <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/cart">
           <FiShoppingCart className="icon" />
           Cart
           <div className="cart-count">0</div>
-        </NavLink>
-         <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/tracker">
-          <FiClock className="icon" />
-          Tracker
         </NavLink>
             <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/login">
         <FiLogIn className="icon" />
@@ -124,9 +126,7 @@ class Home extends React.Component {
     return (
       <>
         <Navigation />
-        <div className="ad-container">
         <div className="slider-container">
-          {/* <h2>Grocery Shopping Made Easy</h2> */}
           <div className="slider">
             
             {slides.map((slide, index) => {
@@ -165,7 +165,6 @@ class Home extends React.Component {
                   key={index}
                   onClick={() => this.handleSlideChange(index)}
                 >
-                  {/* {index + 1} */}
                 </button>
               );
             })}
@@ -197,11 +196,11 @@ class Home extends React.Component {
             </button>
           </div>
         </div>
-        <div className="card-container">
+        {/* <div className="card-container">
         <div className="card-one">get 20% off every order you make in March</div>
         <div className="card-two">get 30% off every order you make in March</div>
-        </div>
-        </div>
+        </div> */}
+       
         <Flowchart />
         <Grocery />
         <Values />
@@ -272,13 +271,7 @@ class SignupPage extends React.Component {
             </label>
             <select>
               <option value="Lagos">Lagos </option>
-              <option value="Ibadan">Ibadan </option>
               </select>
-              <label>
-             Home Adress<span>*</span>
-            </label>
-            <input type="text" placeholder="Home Address" required />
-            
             <label>
               Password<span>*</span>
             </label>

@@ -356,7 +356,7 @@ body {
   color: #B3561B;
 }
 
-.ad-container {
+/* .ad-container {
   display: flex;
   flex-direction: row;
   height: 100vh;
@@ -382,16 +382,15 @@ body {
   background-color: #B3561B;
   height: 43vh;
   border-radius: 9px;
-}
+} */
 
 .slider-container {
-  /* width: 100%; */
-  width: 70%;
+  width: 97.5%;
   height: 85vh;
   background-color: #FFA845;
   border-radius: 9px;
   padding: 20px 8px 0px 8px;
-  margin: 65px 15px 0px 15px;
+  margin: 65px auto 0px auto;
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%);
 }
 
