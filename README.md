@@ -113,11 +113,7 @@ MyDomot is a React-based application, built with the following technologies:
 <!-- Lessons from the Project -->
 ## Lessons Learned
 
-Creating this blog helped me learn and practice:
-* Responsive Web Design
-* Debugging
-* Routing
-* Documentation
+This project has been an excellent learning experience for me. I have had the opportunity to learn how to use React to create an online shopping application, as well as how to implement various features such as a shopping cart, search bar, item details page, checkout process, delivery tracking system, and customer support system. I have also had the chance to gain a better understanding of web technologies such as HTML, CSS, and JavaScript. I also made this project fully responsive on all devices, I went through processes like debugging and documenting of codes.
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
