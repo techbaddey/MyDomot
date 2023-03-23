@@ -112,7 +112,7 @@ class Home extends React.Component {
       },
       {
         image: groceryOne,
-        btnText: "Ramadan Kareem",
+        btnText: "Ramadan Kareem from MyDomot!",
         text: "Get Your Groceries Delivered Easily and Affordably this Ramadan.",
         subtext: "Say goodbye to tedious grocery shopping. Let our experienced shoppers bring the groceries you need right to your doorstep, so  you can enjoy more time doing the things you love this Ramadan.",
         
