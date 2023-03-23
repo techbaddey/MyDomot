@@ -263,7 +263,22 @@ class SignupPage extends React.Component {
               placeholder="Email"
               required
             />
-
+             <label>
+             Phone Number<span>*</span>
+            </label>
+            <input type="text" placeholder="Phone Number" required />
+            <label>
+              Location<span>*</span>
+            </label>
+            <select>
+              <option value="Lagos">Lagos </option>
+              <option value="Ibadan">Ibadan </option>
+              </select>
+              <label>
+             Home Adress<span>*</span>
+            </label>
+            <input type="text" placeholder="Home Address" required />
+            
             <label>
               Password<span>*</span>
             </label>
