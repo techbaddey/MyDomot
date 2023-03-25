@@ -2,21 +2,15 @@
   border-radius: 8px;
   background: transparent;
   text-align: center;
-  height: 237px;
-  width: 160px;
-  margin: 7px;
+  height: 232px;
+  width: 150px;
+  margin: 5px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* .card:hover {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
-  transform: scale(1.05);
-  cursor: pointer;
-} */
-
 .card__image {
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   border-radius: 8px 8px 0px 0px;
 }
 
