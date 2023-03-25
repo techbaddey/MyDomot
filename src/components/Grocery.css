@@ -1,16 +1,14 @@
-.cardall .card {
+.card {
   border-radius: 8px;
   background: transparent;
   text-align: center;
-  height: 232px;
-  width: 150px;
-  margin: 5px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+  height: 255px;
+  width: 185px;
+  margin: 7px;
 }
-
 .card__image {
-  width: 150px;
-  height: 150px;
+  width: 185px;
+  height: 185px;
   border-radius: 8px 8px 0px 0px;
 }
 
@@ -110,4 +108,22 @@
   background-color: white;
   margin: 0px 15px;
   padding-left: 7px;
+}
+
+@media (max-width: 600px) {
+  .cardall .card {
+    border-radius: 8px;
+    background: transparent;
+    text-align: center;
+    height: 232px;
+    width: 150px;
+    margin: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px 8px 0px 0px;
+  }
 }
