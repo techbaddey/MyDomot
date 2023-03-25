@@ -87,6 +87,12 @@ import sardine from "../groceries/sardine.jpg";
 import sweetcorn from "../groceries/sweetcorn.jpg";
 import tomatotin from "../groceries/tomatotin.jpg";
 
+import marketone from "../assets/market-one.jpg";
+import markettwo from "../assets/market-two.jpg";
+import marketthree from "../assets/market-three.jpg";
+import marketfour from "../assets/market-four.jpg";
+import marketfive from "../assets/market-five.jpg";
+import marketsix from "../assets/market-six.png";
 
 
 
@@ -722,7 +728,7 @@ export function Categories() {
     <p>Oils & Seasonings</p>
     </div>
      <div className="one-caty">
-    <img src={tubersAndGrains[0].image} alt="foodstuff" />
+    <img src={tubersAndGrains[1].image} alt="foodstuff" />
     <p>Tubers & Grains</p>
     </div>
     <div className="one-caty">
@@ -732,6 +738,33 @@ export function Categories() {
     <div className="one-caty">
     <img src={meatAndSeaFoods[0].image} alt="foodstuff" />
     <p>Meat & Sea Foods</p>
+    </div>
+    </div>
+    <p>Local Markets in Lagos, Nigeria</p>
+    <div className="ad-category"> 
+    <div className="one-caty">
+    <img src={marketone} alt="foodstuff" />
+    <p>Oshodi Market – Oshodi, Lagos</p>
+    </div>
+    <div className="one-caty">
+    <img src={markettwo} alt="foodstuff" />
+    <p>Balogun Market – Lagos Island, Lagos</p>
+    </div>
+    <div className="one-caty">
+    <img src={marketthree} alt="foodstuff" />
+    <p>Tejuosho Market – Yaba, Lagos</p>
+    </div>
+     <div className="one-caty">
+    <img src={marketfour} alt="foodstuff" />
+    <p>Eko Market – Victoria Island, Lagos</p>
+    </div>
+    <div className="one-caty">
+    <img src={marketfive} alt="foodstuff" />
+    <p>Ojuwoye Market - Mushin, Lagos</p>
+    </div>
+    <div className="one-caty">
+    <img src={marketsix} alt="foodstuff" />
+    <p>Ojota Market - Ojota, Lagos</p>
     </div>
     </div>
     </div>
