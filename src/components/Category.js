@@ -702,6 +702,44 @@ const meatAndSeaFoods = [
   },
 ];
 
+
+export function Categories() {
+  return (
+    <>
+    <div className="ad-categories">
+   <p>Category </p>
+    <div className="ad-category"> 
+    <div className="one-caty">
+    <img src={foodstuffs[3].image} alt="foodstuff" />
+    <p>Foodstuffs</p>
+    </div>
+    <div className="one-caty">
+    <img src={fruitsAndVegetables[0].image} alt="foodstuff" />
+    <p>Fruits & Vegetables</p>
+    </div>
+    <div className="one-caty">
+    <img src={oilsAndSeasonings[0].image} alt="foodstuff" />
+    <p>Oils & Seasonings</p>
+    </div>
+     <div className="one-caty">
+    <img src={tubersAndGrains[0].image} alt="foodstuff" />
+    <p>Tubers & Grains</p>
+    </div>
+    <div className="one-caty">
+    <img src={beveragesAndCannedFoods[0].image} alt="foodstuff" />
+    <p>Beverages & Canned Foods</p>
+    </div>
+    <div className="one-caty">
+    <img src={meatAndSeaFoods[0].image} alt="foodstuff" />
+    <p>Meat & Sea Foods</p>
+    </div>
+    </div>
+    </div>
+    </>
+  )
+}
+
+
 const Category = () => {
   const [category, setCategory] = useState(groceryList);
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -736,6 +774,7 @@ const Category = () => {
   return (
     <>
       <Navigation />
+      <Categories />
       <div className="category-container">
       <div className="category-header">
       <p className="title">Shop by Category</p>
