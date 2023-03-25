@@ -358,34 +358,6 @@ body {
   color: #B3561B;
 }
 
-/* .ad-container {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-}
-
-.card-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 65px;
-  height: 85vh;
-}
-
-.card-one {
-  background-color: #B3561B;
-  height: 43vh;
-  margin-bottom: 10px;
-  border-radius: 9px;
-}
-
-.card-two{
-  background-color: #B3561B;
-  height: 43vh;
-  border-radius: 9px;
-} */
-
 .slider-container {
   width: 97.5%;
   height: 85vh;
@@ -402,17 +374,8 @@ body {
   height: 74%;
   overflow: hidden;
   margin-top: 30px;
-  /* margin-bottom: 2px; */
 }
 
-/* .slider-container h2 {
-  text-align: center;
-  margin-right: 11%;
-  margin-top: 2%;
-  color: #FFA845;
-  padding-top: 30px;
-  font-size: 30px;
-} */
 
 .slide-text {
   position: absolute;
@@ -460,7 +423,6 @@ body {
   color: #fff;
   font-weight: 600;
   font-size: 18px;
-  margin-bottom: 8px;
 }
 
 .slide-btn {
@@ -621,13 +583,7 @@ body {
   }
 
   .slide-text .first-text {
-    margin-bottom: 8px;
-    background-color: #B3561B;
-    padding: 5px;
-    border-radius: 5px;
-    color: #000;
-    font-weight: 500;
-    font-size: 15px;
+    display: none;
   }
   
   .slide-text .second-text {
@@ -656,7 +612,7 @@ body {
     bottom: 0;
     right: 0;
     font-size: 16px;
-    padding: 20px;
+    padding: 10px 20px;
     background: rgba(0, 0, 0, 0.3);
     color: #fff;
     text-align: center;

@@ -20,7 +20,7 @@
   /* padding: 20px 10px; */
 }
 
-.card {
+.container .card {
   border-radius: 8px;
   background: transparent;
   text-align: center;
@@ -29,30 +29,30 @@
   margin: 7px;
 }
 
-.card:hover {
+.container .card:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
   transform: scale(1.05);
   cursor: pointer;
 }
 
 
-.card__image {
+.container .card__image {
   width: 185px;
   height: 185px;
   border-radius: 8px 8px 0px 0px;
 }
 
-.card__content {
+.container .card__content {
   text-align: left;
   padding-left: 5px;
 }
 
-.card__title {
+.container .card__title {
   font-size: 1rem;
   color: #212121;
 }
 
-.card__price {
+.container .card__price {
   font-size: 0.9rem;
   font-weight: bold;
   color: #212121;
@@ -99,7 +99,7 @@ select:focus {
 }
 
 .ad-categories {
-  margin-top: 60px;
+  margin-top: 65px;
 }
 
 .ad-categories p {
@@ -126,8 +126,8 @@ select:focus {
   border-radius: 8px;
   background: transparent;
   text-align: center;
-  height: 200px;
-  width: 200px;
+  height: 160px;
+  width: 160px;
   margin: 7px;
 }
 
@@ -149,17 +149,13 @@ select:focus {
 }
 
 .ad-category img {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   border-radius: 8px;
 }
 
 /* Media Query for mobile view */
 @media (max-width: 576px) {
-  /* .card {
-    width: 75%;
-    margin: 10px;
-  } */
   .card__button {
     padding: 5px;
     font-size: 12px;
@@ -168,10 +164,6 @@ select:focus {
 
 /* Media Query for desktop view */
 @media (min-width: 992px) {
-  /* .card {
-    width: 20%;
-    margin: 10px;
-  } */
   .card__button {
     padding: 5px;
     font-size: 16px;

@@ -17,7 +17,7 @@ function Flowchart() {
         </div>
         <div className='flow'>
         <img src={shoponline} alt="shoponline" className="flowchart" />
-        <p>Add groceries to your cart or make a list or get an offline shopper</p>
+        <p>Add groceries to your cart or make a list.</p>
         </div>
         <div className='flow'>
         <img src={doordelivery} alt="doordelivery" className="flowchart" />

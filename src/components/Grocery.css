@@ -1,21 +1,22 @@
-.card {
+.cardall .card {
   border-radius: 8px;
   background: transparent;
   text-align: center;
-  height: 263px;
-  width: 185px;
+  height: 237px;
+  width: 160px;
   margin: 7px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
 }
 
-.card:hover {
+/* .card:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
   transform: scale(1.05);
   cursor: pointer;
-}
+} */
 
 .card__image {
-  width: 185px;
-  height: 185px;
+  width: 160px;
+  height: 160px;
   border-radius: 8px 8px 0px 0px;
 }
 
