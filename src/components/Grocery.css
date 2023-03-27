@@ -1,10 +1,11 @@
-.card {
+.cardall .card {
   border-radius: 8px;
   background: transparent;
   text-align: center;
-  height: 255px;
+  height: 270px;
   width: 185px;
   margin: 7px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
 }
 .card__image {
   width: 185px;

@@ -48,19 +48,19 @@ const foodstuffs = [
     },
     {
       name: "Tomatoes",
-      quantity: "25g basket",
+      quantity: "1 paint bucket",
       price: "₦ 500 - ₦ 1200",
       image: tomatoes
     },
     {
       name: "Onions",
-      quantity: "30g basket",
+      quantity: "2 paint bucket",
       price: "₦ 600 - ₦ 800",
       image: onions
     },
     {
       name: "Beans",
-      quantity: "1 plastic",
+      quantity: "1 paint bucket",
       price: "₦ 1500 - ₦ 2000",
       image: beans
     },
@@ -100,7 +100,7 @@ const fruitsAndVegetables = [
     },
     {
       name: "Bell Pepper",
-      quantity: "25g basket",
+      quantity: "1 paint bucket",
       price: "₦ 500 - ₦ 700",
       image: bellpepper
     },
@@ -133,13 +133,13 @@ const fruitsAndVegetables = [
     },
     {
       name: "Onions",
-      quantity: "30g basket",
+      quantity: "2 paint bucket",
       price: "₦ 600 - ₦ 800",
       image: onions
     },
     {
       name: "Bell Pepper",
-      quantity: "25g basket",
+      quantity: "1 paint bucket",
       price: "₦ 500 - ₦ 700",
       image: bellpepper
     },

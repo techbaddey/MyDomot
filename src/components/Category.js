@@ -101,101 +101,121 @@ const groceryList = [
   {
     name: "Melon Seed",
     price: "₦ 400",
+    quantity: "1 paint bucket",
     image: melonseed
   },
   {
     name: "Palm Oil",
     price: "₦ 850",
+    quantity: "2kg",
     image: palmoil
   },
   {
     name: "Cucumber",
     price: "₦ 850",
+    quantity: "1 dozen",
     image: cucumber
   },
   {
     name: "Potatoes",
     price: "₦ 500",
+    quantity: "2kg",
     image: potatoes
   },
   {
     name: "Rice",
     price: "₦ 9500",
+    quantity: "1 paint bucket",
     image: rice
   },
   {
     name: "Banana",
     price: "₦ 600",
+    quantity: "1 bunch",
     image: banana
   },
   {
     name: "Bell Pepper",
     price: "₦ 500",
+    quantity: "15kg",
     image: bellpepper
   },
   {
     name: "Cashew",
     price: "₦ 400",
+    quantity: "20g",
     image: cashew
   },
   {
     name: "Dates",
     price: "₦ 200",
+    quantity: "50g",
     image: date
   },
   {
     name: "Eggs",
     price: "₦ 700",
+    quantity: "1 crate",
     image: eggs
   },
   {
     name: "Tomatoes",
     price: "₦ 500",
+    quantity: "1kg",
     image: tomatoes
   },
   {
     name: "Onions",
     price: "₦ 600",
+    quantity: "50g",
     image: onions
   },
   {
     name: "Beans",
     price: "₦ 1500",
+    quantity: "1 paint bucket",
     image: beans
   },
   {
     name: "Bitter Leaf",
     price: "₦ 600",
+    quantity: "1 bunch",
     image: bitterleaf
   },
   {
     name: "Grapes",
     price: "₦ 300",
+    quantity: "1 bunch",
     image: grapes
   },
   {
     name: "Green Beans",
     price: "₦ 250",
+    quantity: "25g",
     image: greenbean
   },
   {
     name: "Lemon",
     price: "₦ 700",
+    quantity: "1 dozen",
     image: lemon
   },
   {
     name: "Pineapple",
     price: "₦ 900",
+    quantity: "1 dozen",
     image: pineapple
   },
   {
     name: "Plantain",
     price: "₦ 800",
+    quantity: "1 bunch",
     image: plantain
   },
   {
     name: "Strawberries",
     price: "₦ 400",
+    quantity: "1 bunch",
     image: strawberries
   },
 ];
@@ -204,101 +224,121 @@ const foodstuffs = [
   {
     name: "Eggs",
     price: "₦ 700",
+    quantity: "1 crate",
     image: eggs
   },
   {
     name: "Tomatoes",
     price: "₦ 500",
+    quantity: "25g",
     image: tomatoes
   },
   {
     name: "Onions",
     price: "₦ 600",
+    quantity: "50g",
     image: onions
   },
   {
     name: "Beans",
     price: "₦ 1500",
+    quantity: "1 paint bucket",
     image: beans
   },
   {
     name: "Bitter Leaf",
     price: "₦ 600",
+    quantity: "20g",
     image: bitterleaf
   },
   {
     name: "Coco Yam",
     price: "₦ 1200",
+    quantity: "5kg",
     image: cocoyam
   },
   {
     name: "Crabs",
     price: "₦ 500",
+    quantity: "1 dozen",
     image: crabs
   },
   {
     name: "Crayfish",
     price: "₦ 200",
+    quantity: "20g",
     image: crayfish
   },
   {
     name: "Locust Bean",
     price: "₦ 300",
+    quantity: "10g",
     image: locustbean
   },
   {
     name: "Melon Seed",
     price: "₦ 400",
+    quantity: "1 milk tin",
     image: melonseed
   },
   {
     name: "Palm Oil",
     price: "₦ 850",
+    quantity: "2kg",
     image: palmoil
   },
   {
     name: "Plantain",
     price: "₦ 350",
+    quantity: "1 bunch",
     image: plantain
   },
   {
     name: "Potatoes",
     price: "₦ 500",
+    quantity: "2kg",
     image: potatoes
   },
   {
     name: "Rice",
     price: "₦ 9500",
+    quantity: "1 paint bucket",
     image: rice
   },
   {
     name: "Semovita",
     price: "₦ 3500",
+    quantity: "5kg",
     image: semovita
   },
   {
     name: "Soybean",
     price: "₦ 500",
+    quantity: "1kg",
     image: soybean
   },
   {
     name: "Tiger Nut",
     price: "₦ 200",
+    quantity: "5 milk tin",
     image: tigernut
   },
   {
     name: "Vegetable Oil",
     price: "₦ 700",
+    quantity: "2kg",
     image: vegetableoil
   },
   {
     name: "Yam",
     price: "₦ 1500",
+    quantity: "5 tubers",
     image: yam
   },
   {
     name: "Yam Flour",
     price: "₦ 1200",
+    quantity: "1 paint bucket",
     image: yamflour
   }
 ];
@@ -307,101 +347,121 @@ const fruitsAndVegetables = [
   {
     name: "Carrots",
     price: "₦ 200",
+    quantity: "25g",
     image: carrot
   },
   {
     name: "Apples",
     price: "₦ 500",
+    quantity: "1 dozen",
     image: apple
   },
   {
     name: "Banana",
     price: "₦ 600",
+    quantity: "1 bunch",
     image: banana
   },
   {
     name: "Bell Pepper",
     price: "₦ 500",
+    quantity: "20g",
     image: bellpepper
   },
   {
     name: "Cashew",
     price: "₦ 400",
+    quantity: "1kg",
     image: cashew
   },
   {
     name: "Dates",
     price: "₦ 200",
+    quantity: "15g",
     image: date
   },
   {
     name: "Grapes",
     price: "₦ 300",
+    quantity: "1 bunch",
     image: grapes
   },
   {
     name: "Green Beans",
     price: "₦ 250",
+    quantity: "25g",
     image: greenbean
   },
   {
     name: "Lemon",
     price: "₦ 700",
+    quantity: "1 dozen",
     image: lemon
   },
   {
     name: "Lettuce",
     price: "₦ 500",
+    quantity: "50g",
     image: lettuce
   },
   {
     name: "Mango",
     price: "₦ 200",
+    quantity: "1 dozen",
     image: mango
   },
   {
     name: "Orange",
     price: "₦ 400",
+    quantity: "1 dozen",
     image: oranges
   },
   {
     name: "Pawpaw",
     price: "₦ 300",
+    quantity: "1 dozen",
     image: pawpaw
   },
   {
     name: "Pear",
     price: "₦ 500",
+    quantity: "1 dozen",
     image: pear
   },
   {
     name: "Pineapple",
     price: "₦ 900",
+    quantity: "1 dozen",
     image: pineapple
   },
   {
     name: "Cucumber",
     price: "₦ 800",
+    quantity: "1 dozen",
     image: cucumber
   },
   {
     name: "Strawberries",
     price: "₦ 400",
+    quantity: "1 dozen",
     image: strawberries
   },
   {
     name: "Tiger Nut",
     price: "₦ 200",
+    quantity: "5 milk tin",
     image: tigernut
   },
   {
     name: "Watermelon",
     price: "₦ 1000",
+    quantity: "1 dozen",
     image: watermelon
   },
   {
     name: "Avocado",
     price: "₦ 500",
+    quantity: "1 dozen",
     image: avocado
   }
 ];
@@ -410,81 +470,97 @@ const oilsAndSeasonings = [
   {
     name: "Vegetable Oil",
     price: "₦ 700",
+    quantity: "2kg",
     image: vegetableoil
   },
   {
     name: "Palm Oil",
     price: "₦ 850",
+    quantity: "2kg",
     image: palmoil
   },
   {
     name: "Onions",
     price: "₦ 600",
+    quantity: "1kg",
     image: onions
   },
   {
     name: "Bell Pepper",
     price: "₦ 500",
+    quantity: "20g",
     image: bellpepper
   },
   {
     name: "Crayfish",
     price: "₦ 200",
+    quantity: "1kg",
     image: crayfish
   },
   {
     name: "Black Pepper",
     price: "₦ 500",
+    quantity: "70g",
     image: blackpepper
   },
   {
     name: "Chilli Pepper",
     price: "₦ 700",
+    quantity: "50g",
     image: chilli
   },
   {
     name: "Chilli Powder",
     price: "₦ 300",
+    quantity: "1 mik tin",
     image: chillipepper
   },
   {
     name: "Curry Powder",
     price: "₦ 200",
+    quantity: "2 sachets",
     image: curry
   },
   {
     name: "Garlic",
     price: "₦ 400",
+    quantity: "1kg",
     image: garlic
   },
   {
     name: "Nutmeg",
     price: "₦ 300",
+    quantity: "1 sachet",
     image: nutmeg
   },
   {
     name: "Red Pepper",
     price: "₦ 900",
+    quantity: "1kg",
     image: redpepper
   },
   {
     name: "Salt",
     price: "₦ 250",
+    quantity: "2 sachets",
     image: salt
   },
   {
     name: "Scent Leaves",
     price: "₦ 300",
+    quantity: "20g",
     image: scentleave
   },
   {
     name: "Seasoning",
     price: "₦ 200",
+    quantity: "1 sachet",
     image: seasoning
   },
   {
     name: "Thyme",
     price: "₦ 250",
+    quantity: "12 sachet",
     image: thyme
   },
 ];
@@ -493,71 +569,85 @@ const tubersAndGrains = [
   {
     name: "Coco Yam",
     price: "₦ 1200",
+    quantity: "25g",
     image: cocoyam
   },
   {
     name: "Potatoes",
     price: "₦ 500",
+    quantity: "1kg",
     image: potatoes
   },
   {
     name: "Semovita",
     price: "₦ 3500",
+    quantity: "5kg",
     image: semovita
   },
   {
     name: "Soybean",
     price: "₦ 500",
+    quantity: "1kg",
     image: soybean
   },
   {
     name: "Carrots",
     price: "₦ 200",
+    quantity: "1 dozen",
     image: carrot
   },
   {
     name: "Tiger Nut",
     price: "₦ 200",
+    quantity: "5 milk tin",
     image: tigernut
   },
   {
     name: "Rice",
     price: "₦ 9500",
+    quantity: "1 paint bucket",
     image: rice
   },
   {
     name: "Yam",
     price: "₦ 1500",
+    quantity: "1kg",
     image: yam
   },
   {
     name: "Onions",
     price: "₦ 600",
+    quantity: "1kg",
     image: onions
   },
   {
     name: "Beans",
     price: "₦ 1500",
+    quantity: "1 paint bucket",
     image: beans
   },
   {
     name: "Millet",
     price: "₦ 1500",
+    quantity: "1 paint bucket",
     image: millet
   },
   {
     name: "Cassava",
     price: "₦ 1500",
+    quantity: "1 paint bucket",
     image: cassava
   },
   {
     name: "Garri",
     price: "₦ 1500",
+    quantity: "1 paint bucket",
     image: garri
   },
   {
     name: "Groundnut",
     price: "₦ 1500",
+    quantity: "25g",
     image: groundnut
   },
 ];
@@ -566,71 +656,85 @@ const beveragesAndCannedFoods = [
   {
     name: "Bournvita",
     price: "₦ 1200",
+    quantity: "1 pack",
     image: bournvita
   },
   {
     name: "Butter",
     price: "₦ 1200",
+    quantity: "5 packs",
     image: butter
   },
   {
     name: "Coca Cola",
     price: "₦ 1200",
+    quantity: "2 packs",
     image: coke 
   },
   {
     name: "Corned Beef",
     price: "₦ 1200",
+    quantity: "5 tins",
     image: cornedbeef
   },
   {
     name: "Dano Milk",
     price: "₦ 1200",
+    quantity: "5 tins",
     image: dano
   },
   {
     name: "Geisha",
     price: "₦ 1200",
+    quantity: "5 tins",
     image: geisha
   },
   {
     name: "Tin Tomatoes",
     price: "₦ 1200",
+    quantity: "3 tins",
     image: tomatotin  
   },
   {
     name: "Jam",
     price: "₦ 1200",
+    quantity: "5 jars",
     image: jam
   },
   {
     name: "Lipton Tea",
     price: "₦ 1200",
+    quantity: "5 packs",
     image: lipton
   },
   {
     name: "Malta Guiness",
     price: "₦ 1200",
+    quantity: "5 packs",
     image: malt
   },
   {
     name: "Milo",
     price: "₦ 1200",
+    quantity: "2 packs",
     image: milo
   },
   {
     name: "Nescafe",
     price: "₦ 1200",
+    quantity: "5 tins",
     image: nescafe
   },
   {
     name: "Sardine",
     price: "₦ 1200",
+    quantity: "5 tins",
     image: sardine
   },
   {
     name: "Sweet Corn",
     price: "₦ 1200",
+    quantity: "2 tins",
     image: sweetcorn
   },
 ];
@@ -639,71 +743,85 @@ const meatAndSeaFoods = [
   {
     name: "Crabs",
     price: "₦ 500",
+    quantity: "25g",    
     image: crabs
   },
   {
     name: "Crayfish",
     price: "₦ 200",
+    quantity: "50g",
     image: crayfish
   },
   {
     name: "Beef",
     price: "₦ 700",
+    quantity: "1kg",
     image: beef
   },
   {
     name: "Chicken",
     price: "₦ 1500",
+    quantity: "1kg",
     image: chicken
   },
   {
     name: "Cow Skin",
     price: "₦ 600",
+    quantity: "50g",
     image: cowskin
   },
   {
     name: "Gizzard",
     price: "₦ 500",
+    quantity: "2kg",
     image: gizard
   },
   {
     name: "Lobster",
     price: "₦ 700",
+    quantity: "500g",
     image: lobster
   },
   {
     name: "Mackerel",
     price: "₦ 400",
+    quantity: "2kg",
     image: mackerel
   },
   {
     name: "Periwinkle",
     price: "₦ 200",
+    quantity: "50g",
     image: periwinkle
   },
   {
     name: "Pork",
     price: "₦ 500",
+    quantity: "50g",
     image: pork
   },
   {
     name: "Prawn",
     price: "₦ 400",
+    quantity: "100g",
     image: prawn
   },
   {
     name: "Salmon Fish",
     price: "₦ 750",
+    quantity: "1kg",
     image: salmon
   },
   {
     name: "Shrimp",
     price: "₦ 400",
+    quantity: "25g",
     image: shrimp
   },
   {
     name: "Tilapia Fish",
     price: "₦ 800",
+    quantity: "2kg",
     image: tilapia
   },
 ];
@@ -833,9 +951,10 @@ const Category = () => {
             />
             <div className="card__content">
               <p className="card__title">{grocery.name}</p>
+              <p className="card__quantity">{grocery.quantity}</p>
               <p className="card__price">{grocery.price}</p>
             </div>
-            {/* <button className="card__button">Add to Cart</button> */}
+            <button className="card__button">Add to Cart</button>
           </div>
         ))}
       </div>
