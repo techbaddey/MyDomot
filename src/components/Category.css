@@ -1,5 +1,5 @@
 .category-container {
-  margin: 65px 15px 0px 15px;
+  margin: 30px 15px 0px 15px;
   border-radius: 9px;
   padding-bottom: 40px;
   background-color: white;
@@ -132,7 +132,7 @@ select:focus {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  /* margin-top: 55px; */
+  margin-bottom: 40px;
 }
 
 

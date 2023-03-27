@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import '../components/Category.css';
-import { Navigation } from './Hero';
-import Footer from './Footer';
+import "../components/Category.css";
+import { Navigation } from "./Hero";
+import Footer from "./Footer";
 import apple from "../groceries/apples.jfif";
 import banana from "../groceries/banana.jpeg";
 import grapes from "../groceries/grapes.jpg";
@@ -10,7 +10,7 @@ import bellpepper from "../groceries/bellpepper.jpg";
 import carrot from "../groceries/carrot.jpg";
 import cashew from "../groceries/cashew.jpg";
 import cucumber from "../groceries/cucumber.jfif";
-import date from  "../groceries/date.jpg";
+import date from "../groceries/date.jpg";
 import greenbean from "../groceries/greenbean.jpg";
 import lemon from "../groceries/lemon.jpg";
 import lettuce from "../groceries/lettuce.jpeg";
@@ -94,129 +94,126 @@ import marketfour from "../assets/market-four.jpg";
 import marketfive from "../assets/market-five.jpg";
 import marketsix from "../assets/market-six.png";
 
-
-
-
 const groceryList = [
   {
     name: "Melon Seed",
     price: "₦ 400",
     quantity: "1 paint bucket",
-    image: melonseed
+    image: melonseed,
   },
   {
     name: "Palm Oil",
     price: "₦ 850",
     quantity: "2kg",
-    image: palmoil
+    image: palmoil,
   },
   {
     name: "Cucumber",
     price: "₦ 850",
     quantity: "1 dozen",
-    image: cucumber
+    image: cucumber,
   },
   {
     name: "Potatoes",
     price: "₦ 500",
     quantity: "2kg",
-    image: potatoes
+    image: potatoes,
   },
   {
     name: "Rice",
     price: "₦ 9500",
     quantity: "1 paint bucket",
-    image: rice
+    image: rice,
   },
   {
     name: "Banana",
     price: "₦ 600",
     quantity: "1 bunch",
-    image: banana
+    image: banana,
   },
   {
     name: "Bell Pepper",
     price: "₦ 500",
     quantity: "15kg",
-    image: bellpepper
+    image: bellpepper,
   },
   {
     name: "Cashew",
     price: "₦ 400",
     quantity: "20g",
-    image: cashew
+    image: cashew,
   },
   {
     name: "Dates",
     price: "₦ 200",
     quantity: "50g",
-    image: date
+    image: date,
   },
   {
     name: "Eggs",
     price: "₦ 700",
     quantity: "1 crate",
-    image: eggs
+    image: eggs,
   },
   {
     name: "Tomatoes",
     price: "₦ 500",
     quantity: "1kg",
-    image: tomatoes
+    image: tomatoes,
   },
   {
     name: "Onions",
     price: "₦ 600",
     quantity: "50g",
-    image: onions
+    image: onions,
   },
   {
     name: "Beans",
     price: "₦ 1500",
     quantity: "1 paint bucket",
-    image: beans
+    image: beans,
   },
   {
     name: "Bitter Leaf",
     price: "₦ 600",
     quantity: "1 bunch",
-    image: bitterleaf
+    image: bitterleaf,
   },
   {
     name: "Grapes",
     price: "₦ 300",
     quantity: "1 bunch",
-    image: grapes
+    image: grapes,
   },
   {
     name: "Green Beans",
     price: "₦ 250",
     quantity: "25g",
-    image: greenbean
+    image: greenbean,
   },
   {
     name: "Lemon",
     price: "₦ 700",
     quantity: "1 dozen",
-    image: lemon
+    image: lemon,
   },
   {
     name: "Pineapple",
     price: "₦ 900",
     quantity: "1 dozen",
-    image: pineapple
+    image: pineapple,
   },
   {
     name: "Plantain",
     price: "₦ 800",
     quantity: "1 bunch",
-    image: plantain
+    image: plantain,
   },
   {
     name: "Strawberries",
     price: "₦ 400",
     quantity: "1 bunch",
-    image: strawberries
+    image: strawberries,
   },
 ];
 
@@ -225,122 +222,122 @@ const foodstuffs = [
     name: "Eggs",
     price: "₦ 700",
     quantity: "1 crate",
-    image: eggs
+    image: eggs,
   },
   {
     name: "Tomatoes",
     price: "₦ 500",
     quantity: "25g",
-    image: tomatoes
+    image: tomatoes,
   },
   {
     name: "Onions",
     price: "₦ 600",
     quantity: "50g",
-    image: onions
+    image: onions,
   },
   {
     name: "Beans",
     price: "₦ 1500",
     quantity: "1 paint bucket",
-    image: beans
+    image: beans,
   },
   {
     name: "Bitter Leaf",
     price: "₦ 600",
     quantity: "20g",
-    image: bitterleaf
+    image: bitterleaf,
   },
   {
     name: "Coco Yam",
     price: "₦ 1200",
     quantity: "5kg",
-    image: cocoyam
+    image: cocoyam,
   },
   {
     name: "Crabs",
     price: "₦ 500",
     quantity: "1 dozen",
-    image: crabs
+    image: crabs,
   },
   {
     name: "Crayfish",
     price: "₦ 200",
     quantity: "20g",
-    image: crayfish
+    image: crayfish,
   },
   {
     name: "Locust Bean",
     price: "₦ 300",
     quantity: "10g",
-    image: locustbean
+    image: locustbean,
   },
   {
     name: "Melon Seed",
     price: "₦ 400",
     quantity: "1 milk tin",
-    image: melonseed
+    image: melonseed,
   },
   {
     name: "Palm Oil",
     price: "₦ 850",
     quantity: "2kg",
-    image: palmoil
+    image: palmoil,
   },
   {
     name: "Plantain",
     price: "₦ 350",
     quantity: "1 bunch",
-    image: plantain
+    image: plantain,
   },
   {
     name: "Potatoes",
     price: "₦ 500",
     quantity: "2kg",
-    image: potatoes
+    image: potatoes,
   },
   {
     name: "Rice",
     price: "₦ 9500",
     quantity: "1 paint bucket",
-    image: rice
+    image: rice,
   },
   {
     name: "Semovita",
     price: "₦ 3500",
     quantity: "5kg",
-    image: semovita
+    image: semovita,
   },
   {
     name: "Soybean",
     price: "₦ 500",
     quantity: "1kg",
-    image: soybean
+    image: soybean,
   },
   {
     name: "Tiger Nut",
     price: "₦ 200",
     quantity: "5 milk tin",
-    image: tigernut
+    image: tigernut,
   },
   {
     name: "Vegetable Oil",
     price: "₦ 700",
     quantity: "2kg",
-    image: vegetableoil
+    image: vegetableoil,
   },
   {
     name: "Yam",
     price: "₦ 1500",
     quantity: "5 tubers",
-    image: yam
+    image: yam,
   },
   {
     name: "Yam Flour",
     price: "₦ 1200",
     quantity: "1 paint bucket",
-    image: yamflour
-  }
+    image: yamflour,
+  },
 ];
 
 const fruitsAndVegetables = [
@@ -348,122 +345,122 @@ const fruitsAndVegetables = [
     name: "Carrots",
     price: "₦ 200",
     quantity: "25g",
-    image: carrot
+    image: carrot,
   },
   {
     name: "Apples",
     price: "₦ 500",
     quantity: "1 dozen",
-    image: apple
+    image: apple,
   },
   {
     name: "Banana",
     price: "₦ 600",
     quantity: "1 bunch",
-    image: banana
+    image: banana,
   },
   {
     name: "Bell Pepper",
     price: "₦ 500",
     quantity: "20g",
-    image: bellpepper
+    image: bellpepper,
   },
   {
     name: "Cashew",
     price: "₦ 400",
     quantity: "1kg",
-    image: cashew
+    image: cashew,
   },
   {
     name: "Dates",
     price: "₦ 200",
     quantity: "15g",
-    image: date
+    image: date,
   },
   {
     name: "Grapes",
     price: "₦ 300",
     quantity: "1 bunch",
-    image: grapes
+    image: grapes,
   },
   {
     name: "Green Beans",
     price: "₦ 250",
     quantity: "25g",
-    image: greenbean
+    image: greenbean,
   },
   {
     name: "Lemon",
     price: "₦ 700",
     quantity: "1 dozen",
-    image: lemon
+    image: lemon,
   },
   {
     name: "Lettuce",
     price: "₦ 500",
     quantity: "50g",
-    image: lettuce
+    image: lettuce,
   },
   {
     name: "Mango",
     price: "₦ 200",
     quantity: "1 dozen",
-    image: mango
+    image: mango,
   },
   {
     name: "Orange",
     price: "₦ 400",
     quantity: "1 dozen",
-    image: oranges
+    image: oranges,
   },
   {
     name: "Pawpaw",
     price: "₦ 300",
     quantity: "1 dozen",
-    image: pawpaw
+    image: pawpaw,
   },
   {
     name: "Pear",
     price: "₦ 500",
     quantity: "1 dozen",
-    image: pear
+    image: pear,
   },
   {
     name: "Pineapple",
     price: "₦ 900",
     quantity: "1 dozen",
-    image: pineapple
+    image: pineapple,
   },
   {
     name: "Cucumber",
     price: "₦ 800",
     quantity: "1 dozen",
-    image: cucumber
+    image: cucumber,
   },
   {
     name: "Strawberries",
     price: "₦ 400",
     quantity: "1 dozen",
-    image: strawberries
+    image: strawberries,
   },
   {
     name: "Tiger Nut",
     price: "₦ 200",
     quantity: "5 milk tin",
-    image: tigernut
+    image: tigernut,
   },
   {
     name: "Watermelon",
     price: "₦ 1000",
     quantity: "1 dozen",
-    image: watermelon
+    image: watermelon,
   },
   {
     name: "Avocado",
     price: "₦ 500",
     quantity: "1 dozen",
-    image: avocado
-  }
+    image: avocado,
+  },
 ];
 
 const oilsAndSeasonings = [
@@ -471,97 +468,97 @@ const oilsAndSeasonings = [
     name: "Vegetable Oil",
     price: "₦ 700",
     quantity: "2kg",
-    image: vegetableoil
+    image: vegetableoil,
   },
   {
     name: "Palm Oil",
     price: "₦ 850",
     quantity: "2kg",
-    image: palmoil
+    image: palmoil,
   },
   {
     name: "Onions",
     price: "₦ 600",
     quantity: "1kg",
-    image: onions
+    image: onions,
   },
   {
     name: "Bell Pepper",
     price: "₦ 500",
     quantity: "20g",
-    image: bellpepper
+    image: bellpepper,
   },
   {
     name: "Crayfish",
     price: "₦ 200",
     quantity: "1kg",
-    image: crayfish
+    image: crayfish,
   },
   {
     name: "Black Pepper",
     price: "₦ 500",
     quantity: "70g",
-    image: blackpepper
+    image: blackpepper,
   },
   {
     name: "Chilli Pepper",
     price: "₦ 700",
     quantity: "50g",
-    image: chilli
+    image: chilli,
   },
   {
     name: "Chilli Powder",
     price: "₦ 300",
     quantity: "1 mik tin",
-    image: chillipepper
+    image: chillipepper,
   },
   {
     name: "Curry Powder",
     price: "₦ 200",
     quantity: "2 sachets",
-    image: curry
+    image: curry,
   },
   {
     name: "Garlic",
     price: "₦ 400",
     quantity: "1kg",
-    image: garlic
+    image: garlic,
   },
   {
     name: "Nutmeg",
     price: "₦ 300",
     quantity: "1 sachet",
-    image: nutmeg
+    image: nutmeg,
   },
   {
     name: "Red Pepper",
     price: "₦ 900",
     quantity: "1kg",
-    image: redpepper
+    image: redpepper,
   },
   {
     name: "Salt",
     price: "₦ 250",
     quantity: "2 sachets",
-    image: salt
+    image: salt,
   },
   {
     name: "Scent Leaves",
     price: "₦ 300",
     quantity: "20g",
-    image: scentleave
+    image: scentleave,
   },
   {
     name: "Seasoning",
     price: "₦ 200",
     quantity: "1 sachet",
-    image: seasoning
+    image: seasoning,
   },
   {
     name: "Thyme",
     price: "₦ 250",
     quantity: "12 sachet",
-    image: thyme
+    image: thyme,
   },
 ];
 
@@ -570,85 +567,85 @@ const tubersAndGrains = [
     name: "Coco Yam",
     price: "₦ 1200",
     quantity: "25g",
-    image: cocoyam
+    image: cocoyam,
   },
   {
     name: "Potatoes",
     price: "₦ 500",
     quantity: "1kg",
-    image: potatoes
+    image: potatoes,
   },
   {
     name: "Semovita",
     price: "₦ 3500",
     quantity: "5kg",
-    image: semovita
+    image: semovita,
   },
   {
     name: "Soybean",
     price: "₦ 500",
     quantity: "1kg",
-    image: soybean
+    image: soybean,
   },
   {
     name: "Carrots",
     price: "₦ 200",
     quantity: "1 dozen",
-    image: carrot
+    image: carrot,
   },
   {
     name: "Tiger Nut",
     price: "₦ 200",
     quantity: "5 milk tin",
-    image: tigernut
+    image: tigernut,
   },
   {
     name: "Rice",
     price: "₦ 9500",
     quantity: "1 paint bucket",
-    image: rice
+    image: rice,
   },
   {
     name: "Yam",
     price: "₦ 1500",
     quantity: "1kg",
-    image: yam
+    image: yam,
   },
   {
     name: "Onions",
     price: "₦ 600",
     quantity: "1kg",
-    image: onions
+    image: onions,
   },
   {
     name: "Beans",
     price: "₦ 1500",
     quantity: "1 paint bucket",
-    image: beans
+    image: beans,
   },
   {
     name: "Millet",
     price: "₦ 1500",
     quantity: "1 paint bucket",
-    image: millet
+    image: millet,
   },
   {
     name: "Cassava",
     price: "₦ 1500",
     quantity: "1 paint bucket",
-    image: cassava
+    image: cassava,
   },
   {
     name: "Garri",
     price: "₦ 1500",
     quantity: "1 paint bucket",
-    image: garri
+    image: garri,
   },
   {
     name: "Groundnut",
     price: "₦ 1500",
     quantity: "25g",
-    image: groundnut
+    image: groundnut,
   },
 ];
 
@@ -657,85 +654,85 @@ const beveragesAndCannedFoods = [
     name: "Bournvita",
     price: "₦ 1200",
     quantity: "1 pack",
-    image: bournvita
+    image: bournvita,
   },
   {
     name: "Butter",
     price: "₦ 1200",
     quantity: "5 packs",
-    image: butter
+    image: butter,
   },
   {
     name: "Coca Cola",
     price: "₦ 1200",
     quantity: "2 packs",
-    image: coke 
+    image: coke,
   },
   {
     name: "Corned Beef",
     price: "₦ 1200",
     quantity: "5 tins",
-    image: cornedbeef
+    image: cornedbeef,
   },
   {
     name: "Dano Milk",
     price: "₦ 1200",
     quantity: "5 tins",
-    image: dano
+    image: dano,
   },
   {
     name: "Geisha",
     price: "₦ 1200",
     quantity: "5 tins",
-    image: geisha
+    image: geisha,
   },
   {
     name: "Tin Tomatoes",
     price: "₦ 1200",
     quantity: "3 tins",
-    image: tomatotin  
+    image: tomatotin,
   },
   {
     name: "Jam",
     price: "₦ 1200",
     quantity: "5 jars",
-    image: jam
+    image: jam,
   },
   {
     name: "Lipton Tea",
     price: "₦ 1200",
     quantity: "5 packs",
-    image: lipton
+    image: lipton,
   },
   {
     name: "Malta Guiness",
     price: "₦ 1200",
     quantity: "5 packs",
-    image: malt
+    image: malt,
   },
   {
     name: "Milo",
     price: "₦ 1200",
     quantity: "2 packs",
-    image: milo
+    image: milo,
   },
   {
     name: "Nescafe",
     price: "₦ 1200",
     quantity: "5 tins",
-    image: nescafe
+    image: nescafe,
   },
   {
     name: "Sardine",
     price: "₦ 1200",
     quantity: "5 tins",
-    image: sardine
+    image: sardine,
   },
   {
     name: "Sweet Corn",
     price: "₦ 1200",
     quantity: "2 tins",
-    image: sweetcorn
+    image: sweetcorn,
   },
 ];
 
@@ -743,153 +740,160 @@ const meatAndSeaFoods = [
   {
     name: "Crabs",
     price: "₦ 500",
-    quantity: "25g",    
-    image: crabs
+    quantity: "25g",
+    image: crabs,
   },
   {
     name: "Crayfish",
     price: "₦ 200",
     quantity: "50g",
-    image: crayfish
+    image: crayfish,
   },
   {
     name: "Beef",
     price: "₦ 700",
     quantity: "1kg",
-    image: beef
+    image: beef,
   },
   {
     name: "Chicken",
     price: "₦ 1500",
     quantity: "1kg",
-    image: chicken
+    image: chicken,
   },
   {
     name: "Cow Skin",
     price: "₦ 600",
     quantity: "50g",
-    image: cowskin
+    image: cowskin,
   },
   {
     name: "Gizzard",
     price: "₦ 500",
     quantity: "2kg",
-    image: gizard
+    image: gizard,
   },
   {
     name: "Lobster",
     price: "₦ 700",
     quantity: "500g",
-    image: lobster
+    image: lobster,
   },
   {
     name: "Mackerel",
     price: "₦ 400",
     quantity: "2kg",
-    image: mackerel
+    image: mackerel,
   },
   {
     name: "Periwinkle",
     price: "₦ 200",
     quantity: "50g",
-    image: periwinkle
+    image: periwinkle,
   },
   {
     name: "Pork",
     price: "₦ 500",
     quantity: "50g",
-    image: pork
+    image: pork,
   },
   {
     name: "Prawn",
     price: "₦ 400",
     quantity: "100g",
-    image: prawn
+    image: prawn,
   },
   {
     name: "Salmon Fish",
     price: "₦ 750",
     quantity: "1kg",
-    image: salmon
+    image: salmon,
   },
   {
     name: "Shrimp",
     price: "₦ 400",
     quantity: "25g",
-    image: shrimp
+    image: shrimp,
   },
   {
     name: "Tilapia Fish",
     price: "₦ 800",
     quantity: "2kg",
-    image: tilapia
+    image: tilapia,
   },
 ];
 
+export function CategoriesTwo() {
+  return (
+    <>
+      <div className="ad-categories">
+        <p>Categories </p>
+        <div className="ad-category">
+          <div className="one-caty">
+            <img src={foodstuffs[3].image} alt="foodstuff" />
+            <p>Foodstuffs</p>
+          </div>
+          <div className="one-caty">
+            <img src={fruitsAndVegetables[0].image} alt="foodstuff" />
+            <p>Fruits & Vegetables</p>
+          </div>
+          <div className="one-caty">
+            <img src={oilsAndSeasonings[0].image} alt="foodstuff" />
+            <p>Oils & Seasonings</p>
+          </div>
+          <div className="one-caty">
+            <img src={tubersAndGrains[1].image} alt="foodstuff" />
+            <p>Tubers & Grains</p>
+          </div>
+          <div className="one-caty">
+            <img src={beveragesAndCannedFoods[0].image} alt="foodstuff" />
+            <p>Beverages & Canned Foods</p>
+          </div>
+          <div className="one-caty">
+            <img src={meatAndSeaFoods[0].image} alt="foodstuff" />
+            <p>Meat & Sea Foods</p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
 
 export function Categories() {
   return (
     <>
-    <div className="ad-categories">
-   <p>Category </p>
-    <div className="ad-category"> 
-    <div className="one-caty">
-    <img src={foodstuffs[3].image} alt="foodstuff" />
-    <p>Foodstuffs</p>
-    </div>
-    <div className="one-caty">
-    <img src={fruitsAndVegetables[0].image} alt="foodstuff" />
-    <p>Fruits & Vegetables</p>
-    </div>
-    <div className="one-caty">
-    <img src={oilsAndSeasonings[0].image} alt="foodstuff" />
-    <p>Oils & Seasonings</p>
-    </div>
-     <div className="one-caty">
-    <img src={tubersAndGrains[1].image} alt="foodstuff" />
-    <p>Tubers & Grains</p>
-    </div>
-    <div className="one-caty">
-    <img src={beveragesAndCannedFoods[0].image} alt="foodstuff" />
-    <p>Beverages & Canned Foods</p>
-    </div>
-    <div className="one-caty">
-    <img src={meatAndSeaFoods[0].image} alt="foodstuff" />
-    <p>Meat & Sea Foods</p>
-    </div>
-    </div>
-    <p>Local Markets in Lagos, Nigeria</p>
-    <div className="ad-category"> 
-    <div className="one-caty">
-    <img src={marketone} alt="foodstuff" />
-    <p>Oshodi Market – Oshodi, Lagos</p>
-    </div>
-    <div className="one-caty">
-    <img src={markettwo} alt="foodstuff" />
-    <p>Balogun Market – Lagos Island, Lagos</p>
-    </div>
-    <div className="one-caty">
-    <img src={marketthree} alt="foodstuff" />
-    <p>Tejuosho Market – Yaba, Lagos</p>
-    </div>
-     <div className="one-caty">
-    <img src={marketfour} alt="foodstuff" />
-    <p>Eko Market – Victoria Island, Lagos</p>
-    </div>
-    <div className="one-caty">
-    <img src={marketfive} alt="foodstuff" />
-    <p>Ojuwoye Market - Mushin, Lagos</p>
-    </div>
-    <div className="one-caty">
-    <img src={marketsix} alt="foodstuff" />
-    <p>Ojota Market - Ojota, Lagos</p>
-    </div>
-    </div>
-    </div>
+      <div className="ad-categories">
+        <p>Local Markets in Lagos, Nigeria</p>
+        <div className="ad-category">
+          <div className="one-caty">
+            <img src={marketone} alt="foodstuff" />
+            <p>Oshodi Market – Oshodi, Lagos</p>
+          </div>
+          <div className="one-caty">
+            <img src={markettwo} alt="foodstuff" />
+            <p>Balogun Market – Lagos Island, Lagos</p>
+          </div>
+          <div className="one-caty">
+            <img src={marketthree} alt="foodstuff" />
+            <p>Tejuosho Market – Yaba, Lagos</p>
+          </div>
+          <div className="one-caty">
+            <img src={marketfour} alt="foodstuff" />
+            <p>Eko Market – Victoria Island, Lagos</p>
+          </div>
+          <div className="one-caty">
+            <img src={marketfive} alt="foodstuff" />
+            <p>Ojuwoye Market - Mushin, Lagos</p>
+          </div>
+          <div className="one-caty">
+            <img src={marketsix} alt="foodstuff" />
+            <p>Ojota Market - Ojota, Lagos</p>
+          </div>
+        </div>
+      </div>
     </>
-  )
+  );
 }
-
 
 const Category = () => {
   const [category, setCategory] = useState(groceryList);
@@ -925,39 +929,41 @@ const Category = () => {
   return (
     <>
       <Navigation />
-      <Categories />
+      <CategoriesTwo />
       <div className="category-container">
-      <div className="category-header">
-      <p className="title">Shop by Category</p>
-      <div className="input-container">
-        <select onChange={handleChange} value={selectedCategory}>
-          <option value="">Select Category</option>
-          <option value="foodstuffs">Foodstuffs</option>
-          <option value="fruitsAndVegetables">Fruits and Vegetables</option>
-          <option value="oilsAndSeasonings">Oils and Seasonings</option>
-          <option value="tubersAndGrains">Tubers and Grains</option>
-          <option value="beveragesAndCannedFoods">Beverages and Canned Foods</option>
-          <option value="meatAndSeaFoods">Meat and Sea foods</option>
-        </select>
-      </div>
-      </div>
-      <div className="container">
-        {category.map((grocery, index) => (
-          <div key={index} className="card">
-            <img
-              className="card__image"
-              src={grocery.image}
-              alt={grocery.name}
-            />
-            <div className="card__content">
-              <p className="card__title">{grocery.name}</p>
-              <p className="card__quantity">{grocery.quantity}</p>
-              <p className="card__price">{grocery.price}</p>
-            </div>
-            <button className="card__button">Add to Cart</button>
+        <div className="category-header">
+          <p className="title">Shop by Category</p>
+          <div className="input-container">
+            <select onChange={handleChange} value={selectedCategory}>
+              <option value="">Select Category</option>
+              <option value="foodstuffs">Foodstuffs</option>
+              <option value="fruitsAndVegetables">Fruits and Vegetables</option>
+              <option value="oilsAndSeasonings">Oils and Seasonings</option>
+              <option value="tubersAndGrains">Tubers and Grains</option>
+              <option value="beveragesAndCannedFoods">
+                Beverages and Canned Foods
+              </option>
+              <option value="meatAndSeaFoods">Meat and Sea foods</option>
+            </select>
           </div>
-        ))}
-      </div>
+        </div>
+        <div className="container">
+          {category.map((grocery, index) => (
+            <div key={index} className="card">
+              <img
+                className="card__image"
+                src={grocery.image}
+                alt={grocery.name}
+              />
+              <div className="card__content">
+                <p className="card__title">{grocery.name}</p>
+                <p className="card__quantity">{grocery.quantity}</p>
+                <p className="card__price">{grocery.price}</p>
+              </div>
+              <button className="card__button">Add to Cart</button>
+            </div>
+          ))}
+        </div>
       </div>
       <Footer />
     </>

@@ -18,6 +18,7 @@ import Values from "./Values";
 import Footer from "./Footer";
 import About from "./About";
 import Tracker from "./Tracker";
+import { Categories } from "./Category";
 import groceryOne from "../assets/grocery_one.png";
 import groceryTwo from "../assets/grocery_two.png";
 import groceryThree from "../assets/grocery_three.png";
@@ -206,6 +207,7 @@ class Home extends React.Component {
           </div>
         </div>
         <Flowchart />
+        <Categories />
         <Grocery />
         <Values />
         <Footer />
