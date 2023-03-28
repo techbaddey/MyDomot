@@ -104,12 +104,12 @@ class Home extends React.Component {
   render() {
     const slides = [ 
       {
-        image: groceryThree,
+        image: grocerySix,
         btnText: "Shop With MyDomot Today",
         text: "We are ONLY operating in Lagos, Nigeria at the moment.",
         subtext: "We are your one-stop shop for all your grocery needs. Make a grocery list and we'll take care of the rest. We'll make sure you get everything you need in one convenient doorstep delivery.",
         
-        imagetwo: grocerySix,
+        imagetwo: groceryThree,
       },
       {
         image: groceryOne,
