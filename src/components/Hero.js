@@ -17,6 +17,7 @@ import Grocery from "./Grocery";
 import Values from "./Values";
 import Footer from "./Footer";
 import About from "./About";
+import Market from "./Market";
 import Tracker from "./Tracker";
 import { Categories } from "./Category";
 import groceryOne from "../assets/grocery_one.png";
@@ -42,7 +43,7 @@ export const Navigation = () => {
         <FiHome className="icon" />
           Home
         </NavLink>
-          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/category">
+          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/market">
         <FiList className="icon" />
           Category
           </NavLink>
@@ -67,7 +68,7 @@ export const Navigation = () => {
           Home
         </NavLink>
        
-        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/category">
+        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/market">
           <FiList className="icon" />
           Category
         </NavLink>
@@ -383,6 +384,7 @@ function Path() {
       <Route path="/" element={<Home />} />
       <Route path="/aboutus" element={<About />} />
       <Route path="/category" element={<Category />} />
+      <Route path="/market" element={<Market />} />
       <Route path="/tracker" element={<Tracker />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/login" element={<LoginPage />} />

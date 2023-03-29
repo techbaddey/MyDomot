@@ -1,0 +1,75 @@
+.select-market {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 35%;
+    padding: 15px 0px;
+    /* padding: 15px; */
+    border-radius: 7px;
+}
+
+.select-market h2 {
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #B3561B;
+    color: #B3561B;
+}
+
+.select-market p {
+padding: 8px;
+font-weight: 500;
+}
+
+.select-market .first {
+    margin-top: 15px;
+}
+
+.select-market input {
+   margin-left: 8px;
+   margin-right: 5px;
+   cursor: pointer;
+}
+
+.select-market button {
+   padding: 5px 25px;
+   margin: 0 auto;
+   text-align: center;
+background-color: #B3561B;
+border: none;
+border-radius: 7px;
+color: #fff;
+font-size: 0.9rem;
+font-weight: 500;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+margin-top: 15px;
+margin-bottom: 5px;
+}
+
+.select-market a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+
+    .select-market {
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 80%;
+        padding: 15px 0px;
+        /* padding: 15px; */
+        border-radius: 7px;
+    }
+
+}

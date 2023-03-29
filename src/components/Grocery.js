@@ -35,7 +35,7 @@ import eggs from "../groceries/eggs.jpg";
 import tomatoes from "../groceries/tomatoes.jpeg";
 import beans from "../groceries/beans.jfif";
 import bitterleaf from "../groceries/bitterleaf.jpg";
-import Category from './Category';
+import Market from './Market';
 
 
 
@@ -279,7 +279,7 @@ export default function Grocery() {
       <> 
       <div className='card-head head-one'>
       <h2>Food stuffs</h2>
-      <Link to="/category">
+      <Link to="/market">
         <button>SEE ALL<span><FiArrowRight /></span></button>
         </Link>
         </div> 
@@ -302,7 +302,7 @@ export default function Grocery() {
              </div> 
              <div className='card-head head-two'>
       <h2>Fruits and Vegetables</h2>
-      <Link to="/category">
+      <Link to="/market">
         <button>SEE ALL<span><FiArrowRight /></span></button>
         </Link>
         </div>
@@ -325,7 +325,7 @@ export default function Grocery() {
         </div> 
         <div className='card-head head-three'>
       <h2>Oils and Seasonings</h2>
-      <Link to="/category">
+      <Link to="/market">
         <button>SEE ALL<span><FiArrowRight /></span></button>
         </Link>
         </div>
@@ -348,7 +348,7 @@ export default function Grocery() {
         </div>
         <div className='card-head head-four'>
       <h2>Tubers and Grains</h2>
-      <Link to="/category">
+      <Link to="/market">
         <button>SEE ALL<span><FiArrowRight /></span></button>
         </Link>
         </div>
@@ -371,7 +371,7 @@ export default function Grocery() {
         </div> 
         <div className='card-head head-five'>
       <h2>Beverages and Canned Foods</h2>
-      <Link to="/category">
+      <Link to="/market">
         <button>SEE ALL<span><FiArrowRight /></span></button>
         </Link>
         </div>
@@ -394,7 +394,7 @@ export default function Grocery() {
         </div>
         <div className='card-head head-six'>
       <h2>Meat and Seafoods</h2>
-      <Link to="/category">
+      <Link to="/market">
         <button>SEE ALL<span><FiArrowRight /></span></button>
         </Link>
         </div> 
@@ -420,5 +420,5 @@ export default function Grocery() {
   }
 
  
- <Route path="/category" element={<Category />} />
+ <Route path="/market" element={<Market />} />
        
