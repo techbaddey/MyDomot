@@ -898,6 +898,7 @@ export function Categories() {
 const Category = () => {
   const [category, setCategory] = useState(groceryList);
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [counts, setCounts] = useState({});
 
   const handleChange = (e) => {
     setSelectedCategory(e.target.value);
@@ -925,6 +926,16 @@ const Category = () => {
         break;
     }
   };
+
+  const decrement = (name) => {
+    if (counts[name] && counts[name] > 0) {
+      setCounts({ ...counts, [name]: counts[name] - 1 });
+    }
+  }
+
+  const increment = (name) => {
+    setCounts({ ...counts, [name]: (counts[name] || 0) + 1 });
+  }
 
   return (
     <>
@@ -960,7 +971,14 @@ const Category = () => {
                 <p className="card__quantity">{grocery.quantity}</p>
                 <p className="card__price">{grocery.price}</p>
               </div>
-              <button className="card__button">Add to Cart</button>
+              <div className="count-container">
+                    <button className="decrement-button" onClick={() => decrement(grocery.name)}>-</button>
+                    <div className="count">{counts[grocery.name] || 0}</div>
+                    <button className="increment-button" onClick={() => increment(grocery.name)}>+</button>
+                  </div>
+                  <button className="card__button">Add to Cart</button>
+                 
+           
             </div>
           ))}
         </div>
