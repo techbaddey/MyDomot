@@ -1,7 +1,7 @@
 import React from 'react';
 import '../components/About.css';
 import Footer from './Footer';
-import { Navigation } from "./Category";
+import { Navigation } from "./Hero";
 
 
 function About() {
