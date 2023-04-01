@@ -1,11 +1,7 @@
 import React from 'react';
 import '../components/About.css';
 import Footer from './Footer';
-<<<<<<< HEAD
 import { Navigation } from "./Hero";
-=======
-import { Navigation } from "./Category";
->>>>>>> a0c01f21ca663965283ac8318edb09566bcbef83
 
 
 function About() {
