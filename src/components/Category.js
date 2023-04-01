@@ -1,6 +1,15 @@
 import React, { useState } from "react";
+import { NavLink, Link, Routes, Route } from "react-router-dom";
+import {
+  FiHome,
+  FiShoppingCart,
+  FiLogIn,
+  FiList,
+  FiSearch,
+  FiClock,
+} from "react-icons/fi";
+import myDomot from "../assets/myDomotLogo.png";
 import "../components/Category.css";
-import { Navigation } from "./Hero";
 import Footer from "./Footer";
 import apple from "../groceries/apples.jfif";
 import banana from "../groceries/banana.jpeg";
@@ -895,32 +904,75 @@ export function Categories() {
   );
 }
 
-// export const Cart = ({cart, setCart, handleClick}) => {
-//   return (
-//     <>
-//     <div className="cart-container">
-//       {cart.map((item, index) => (
-//         <div key={index} className="cart-item">
-//           <img className="cart-item__image" src={item.image} alt={item.name} />
-//           <div className="cart-item__content">
-//             <p className="cart-item__title">{item.name}</p>
-//             <p className="cart-item__quantity">{item.quantity}</p>
-//             <p className="cart-item__price">{item.price}</p>
-//           </div>
-//           <div className="cart-item__count">{item.count}</div>
-//         </div>
-//       ))}
-//     </div>
-// </>
-//   )
-// };
+
+export const Navigation = () => {
+  return (
+    <div className="navbar">
+      <img src={myDomot} alt="myDomot" className="logo" />
+      <div className="search">
+        <FiSearch className="iconsearch" />
+        <input type="search" id="search" placeholder="what do you need?" />
+        <button>SEARCH</button>
+      </div>
+      <nav className="desktop-nav">
+      <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/">
+        <FiHome className="icon" />
+          Home
+        </NavLink>
+          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/market">
+        <FiList className="icon" />
+          Category
+          </NavLink>
+         
+          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/tracker">
+        <FiClock className="icon" />
+          Tracker
+          </NavLink> 
+          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/cart">
+        <FiShoppingCart className="icon" />
+          Cart
+          <div className="cart-count">0</div>
+          </NavLink>
+            <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/login">
+        <FiLogIn className="icon" />
+          Login/SignUp
+          </NavLink>
+      </nav>
+      <nav className="mobile-nav">
+      <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/">
+          <FiHome className="icon" />
+          Home
+        </NavLink>
+       
+        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/market">
+          <FiList className="icon" />
+          Category
+        </NavLink>
+        
+         <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/tracker">
+          <FiClock className="icon" />
+          Tracker
+        </NavLink>
+        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/cart">
+          <FiShoppingCart className="icon" />
+          Cart
+          <div className="cart-count">0</div>
+        </NavLink>
+            <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/login">
+        <FiLogIn className="icon" />
+          Login/SignUp
+          </NavLink>
+      </nav>
+    </div>
+  );
+};
 
 const Category = () => {
   const [category, setCategory] = useState(groceryList);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [counts, setCounts] = useState({});
-  // const [cart, setCart] = useState([]);
-
+  const [showAll, setShowAll] = useState(false);
+  
   const handleChange = (e) => {
     setSelectedCategory(e.target.value);
     switch (e.target.value) {
@@ -946,7 +998,11 @@ const Category = () => {
         setCategory(groceryList);
         break;
     }
-  };
+  }
+
+  const handleShowAll = () => {
+    setShowAll(!showAll);
+  }
 
   const decrement = (name) => {
     if (counts[name] && counts[name] > 0) {
@@ -957,16 +1013,6 @@ const Category = () => {
   const increment = (name) => {
     setCounts({ ...counts, [name]: (counts[name] || 0) + 1 });
   }
-
-  // const handleClick = (grocery) => {
-  //   setCart([...cart, {
-  //     image: grocery.image,
-  //     name: grocery.name,
-  //     quantity: grocery.quantity,
-  //     price: grocery.price,
-  //     count: counts[grocery.name] || 0
-  //   }]);
-  // }
 
   return (
     <>
@@ -990,7 +1036,7 @@ const Category = () => {
           </div>
         </div>
         <div className="container">
-          {category.map((grocery, index) => (
+          {category.slice(0, showAll ? category.length : 12).map((grocery, index) => (
             <div key={index} className="card">
               <img
                 className="card__image"
@@ -1008,16 +1054,19 @@ const Category = () => {
                     <button className="increment-button" onClick={() => increment(grocery.name)}>+</button>
                   </div>
                   <button className="card__button">Add to Cart</button>
-                 
-                  {/* <button className="card__button" onClick={() => handleClick(grocery)}>Add to Cart</button>
-                  */}
-           
             </div>
           ))}
         </div>
+        {showAll ? (
+          <button className="see-all-button" onClick={handleShowAll}>
+            See Less
+          </button>
+        ) : (
+          <button className="see-all-button" onClick={handleShowAll}>
+            See All
+          </button>
+        )}
       </div>
-      {/* <Cart cart={cart} setCart={setCart} handleClick={handleClick} />
-       */}
       <Footer />
     </>
   );

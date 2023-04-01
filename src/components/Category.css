@@ -188,6 +188,23 @@ select:focus {
   cursor: pointer;
 }
 
+.see-all-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  margin: 0 auto;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  margin-top: 30px;
+  border: 2px solid #B3561B;
+  border-radius: 8px;
+  color: #B3561B;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
 /* Media Query for desktop view */
 @media (min-width: 992px) {
   .title {
