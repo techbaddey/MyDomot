@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Link, Routes, Route } from "react-router-dom";
+<<<<<<< HEAD
 import myDomot from "../assets/myDomotLogo.png";
 import {
   FiHome,
@@ -9,6 +10,10 @@ import {
   FiSearch,
   FiClock,
 } from "react-icons/fi";
+=======
+import Navigation from "./Category";
+// import myDomot from "../assets/myDomotLogo.png";
+>>>>>>> a0c01f21ca663965283ac8318edb09566bcbef83
 import login from "../assets/login.png";
 import signup from "../assets/signnup.jpeg";
 import Flowchart from "./Flowchart";
@@ -28,67 +33,7 @@ import grocerySix from "../assets/grocery_six.png";
 import grocerySeven from "../assets/grocery_seven.png";
 
 
-export const Navigation = () => {
-  return (
-    <div className="navbar">
-      <img src={myDomot} alt="myDomot" className="logo" />
-      <div className="search">
-        <FiSearch className="iconsearch" />
-        <input type="search" id="search" placeholder="what do you need?" />
-        <button>SEARCH</button>
-      </div>
-      <nav className="desktop-nav">
-      <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/">
-        <FiHome className="icon" />
-          Home
-        </NavLink>
-          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/market">
-        <FiList className="icon" />
-          Category
-          </NavLink>
-         
-          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/tracker">
-        <FiClock className="icon" />
-          Tracker
-          </NavLink> 
-          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/cart">
-        <FiShoppingCart className="icon" />
-          Cart
-          <div className="cart-count">0</div>
-          </NavLink>
-            <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/login">
-        <FiLogIn className="icon" />
-          Login/SignUp
-          </NavLink>
-      </nav>
-      <nav className="mobile-nav">
-      <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/">
-          <FiHome className="icon" />
-          Home
-        </NavLink>
-       
-        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/market">
-          <FiList className="icon" />
-          Category
-        </NavLink>
-        
-         <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/tracker">
-          <FiClock className="icon" />
-          Tracker
-        </NavLink>
-        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/cart">
-          <FiShoppingCart className="icon" />
-          Cart
-          <div className="cart-count">0</div>
-        </NavLink>
-            <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/login">
-        <FiLogIn className="icon" />
-          Login/SignUp
-          </NavLink>
-      </nav>
-    </div>
-  );
-};
+
 class Home extends React.Component {
   constructor(props) {
     super(props);
