@@ -19,6 +19,7 @@ import Footer from "./Footer";
 import About from "./About";
 import Market from "./Market";
 import Tracker from "./Tracker";
+import Cart from "./Cart";
 import { Categories } from "./Category";
 import groceryOne from "../assets/grocery_one.png";
 import groceryTwo from "../assets/grocery_two.png";
@@ -388,6 +389,7 @@ function Path() {
       <Route path="/category" element={<Category />} />
       <Route path="/market" element={<Market />} />
       <Route path="/tracker" element={<Tracker />} />
+      <Route path="/cart" element={<Cart />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/login" element={<LoginPage />} />
     </Routes>

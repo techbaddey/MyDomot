@@ -1,5 +1,7 @@
 import React from "react";
 import "../components/Footer.css";
+import About from "./About";
+import { Link, Route } from "react-router-dom";
 import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
 
 function Footer() {
@@ -12,7 +14,7 @@ function Footer() {
               <div class="footer-title">Company</div>
               <ul class="footer-links">
                 <li>
-                  <a href="#">About Us</a>
+                <Link to="/aboutus">About Us</Link>
                 </li>
                 <li>
                   <a href="#">Become a Shopper</a>
@@ -82,3 +84,6 @@ function Footer() {
 }
 
 export default Footer;
+
+
+<Route path="/aboutus" element={<About />} />

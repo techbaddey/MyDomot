@@ -1,4 +1,4 @@
-.tracker-container {
+.cart-container {
     margin-top: 65px;
     background-color: #fff;
     padding: 20px;
@@ -13,13 +13,13 @@
     justify-content: center;
 }
 
-.tracker-container h2 {
+.cart-container h2 {
     color: #B3561B;
     text-transform: uppercase;
     text-align: center;
 }
 
-.tracker-container p {
+.cart-container p {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -27,7 +27,7 @@
     padding: 0px 240px;
 }
 
-.tracker-container button {
+.cart-container button {
     background-color: #B3561B;
     border: none;
     padding: 7px;
@@ -39,11 +39,8 @@
     cursor: pointer;
 }
 
-
-
-
 @media screen and (max-width: 600px) { 
-    .tracker-container p {
+    .cart-container p {
         text-align: center;
         margin-top: 10px;
         margin-bottom: 15px;
