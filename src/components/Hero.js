@@ -20,6 +20,7 @@ import About from "./About";
 import Market from "./Market";
 import Tracker from "./Tracker";
 import { Categories } from "./Category";
+// import { Cart } from "./Category";
 import groceryOne from "../assets/grocery_one.png";
 import groceryTwo from "../assets/grocery_two.png";
 import groceryThree from "../assets/grocery_three.png";
@@ -384,6 +385,7 @@ function Path() {
       <Route path="/" element={<Home />} />
       <Route path="/aboutus" element={<About />} />
       <Route path="/category" element={<Category />} />
+      {/* <Route path="/cart" element={<Cart />} /> */}
       <Route path="/market" element={<Market />} />
       <Route path="/tracker" element={<Tracker />} />
       <Route path="/signup" element={<SignupPage />} />

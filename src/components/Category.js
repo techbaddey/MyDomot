@@ -895,10 +895,31 @@ export function Categories() {
   );
 }
 
+// export const Cart = ({cart, setCart, handleClick}) => {
+//   return (
+//     <>
+//     <div className="cart-container">
+//       {cart.map((item, index) => (
+//         <div key={index} className="cart-item">
+//           <img className="cart-item__image" src={item.image} alt={item.name} />
+//           <div className="cart-item__content">
+//             <p className="cart-item__title">{item.name}</p>
+//             <p className="cart-item__quantity">{item.quantity}</p>
+//             <p className="cart-item__price">{item.price}</p>
+//           </div>
+//           <div className="cart-item__count">{item.count}</div>
+//         </div>
+//       ))}
+//     </div>
+// </>
+//   )
+// };
+
 const Category = () => {
   const [category, setCategory] = useState(groceryList);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [counts, setCounts] = useState({});
+  // const [cart, setCart] = useState([]);
 
   const handleChange = (e) => {
     setSelectedCategory(e.target.value);
@@ -936,6 +957,16 @@ const Category = () => {
   const increment = (name) => {
     setCounts({ ...counts, [name]: (counts[name] || 0) + 1 });
   }
+
+  // const handleClick = (grocery) => {
+  //   setCart([...cart, {
+  //     image: grocery.image,
+  //     name: grocery.name,
+  //     quantity: grocery.quantity,
+  //     price: grocery.price,
+  //     count: counts[grocery.name] || 0
+  //   }]);
+  // }
 
   return (
     <>
@@ -978,11 +1009,15 @@ const Category = () => {
                   </div>
                   <button className="card__button">Add to Cart</button>
                  
+                  {/* <button className="card__button" onClick={() => handleClick(grocery)}>Add to Cart</button>
+                  */}
            
             </div>
           ))}
         </div>
       </div>
+      {/* <Cart cart={cart} setCart={setCart} handleClick={handleClick} />
+       */}
       <Footer />
     </>
   );
