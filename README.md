@@ -14,7 +14,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/teqbaddie/MyDomot">
-    <img src="public/myDomotLogo.png" alt="Logo" width="30%" height="10%">
+    <img src="public/MyDomotScreen.png" alt="Logo" width="90%" height="90%">
   </a>
 </div>
 
