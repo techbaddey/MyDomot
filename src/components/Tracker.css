@@ -1,53 +1,50 @@
 .tracker-container {
-    margin-top: 65px;
-    background-color: #fff;
-    padding: 20px;
-    margin-left: 12px;
-    margin-right: 12px;
-    border-radius: 9px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%);
-    margin-bottom: -10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  margin-top: 65px;
+  background-color: #fff;
+  padding: 20px;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 9px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%);
+  margin-bottom: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .tracker-container h2 {
-    color: #B3561B;
-    text-transform: uppercase;
-    text-align: center;
+  color: #b3561b;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .tracker-container p {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  padding: 0px 240px;
+}
+
+.tracker-container button {
+  background-color: #b3561b;
+  border: none;
+  padding: 7px;
+  margin-bottom: 7px;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .tracker-container p {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 15px;
     font-size: 16px;
-    padding: 0px 240px;
-}
-
-.tracker-container button {
-    background-color: #B3561B;
-    border: none;
-    padding: 7px;
-    margin-bottom: 7px;
-    border-radius: 7px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-
-
-
-@media screen and (max-width: 600px) { 
-    .tracker-container p {
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        font-size: 16px;
-        padding: 0px;
-    }
+    padding: 0px;
+  }
 }

@@ -14,7 +14,7 @@ function Footer() {
               <div class="footer-title">Company</div>
               <ul class="footer-links">
                 <li>
-                <Link to="/aboutus">About Us</Link>
+                  <Link to="/aboutus">About Us</Link>
                 </li>
                 <li>
                   <a href="#">Become a Shopper</a>
@@ -85,5 +85,4 @@ function Footer() {
 
 export default Footer;
 
-
-<Route path="/aboutus" element={<About />} />
+<Route path="/aboutus" element={<About />} />;

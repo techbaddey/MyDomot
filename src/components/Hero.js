@@ -28,7 +28,6 @@ import groceryFour from "../assets/grocery_four.png";
 import grocerySix from "../assets/grocery_six.png";
 import grocerySeven from "../assets/grocery_seven.png";
 
-
 export const Navigation = () => {
   return (
     <div className="navbar">
@@ -39,58 +38,117 @@ export const Navigation = () => {
         <button>SEARCH</button>
       </div>
       <nav className="desktop-nav">
-      <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/">
-        <FiHome className="icon" />
-          Home
-        </NavLink>
-          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/market">
-        <FiList className="icon" />
-          Category
-          </NavLink>
-         
-          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/tracker">
-        <FiClock className="icon" />
-          Tracker
-          </NavLink> 
-          <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/cart">
-        <FiShoppingCart className="icon" />
-          Cart
-          <div className="cart-count">0</div>
-          </NavLink>
-            <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/login">
-        <FiLogIn className="icon" />
-          Login/SignUp
-          </NavLink>
-      </nav>
-      <nav className="mobile-nav">
-      <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/">
+        <NavLink
+          style={({ isActive }) =>
+            isActive ? { color: "#B3561B" } : { color: "#828282" }
+          }
+          className="nav-link"
+          to="/"
+        >
           <FiHome className="icon" />
           Home
         </NavLink>
-       
-        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/market">
+        <NavLink
+          style={({ isActive }) =>
+            isActive ? { color: "#B3561B" } : { color: "#828282" }
+          }
+          className="nav-link"
+          to="/market"
+        >
           <FiList className="icon" />
           Category
         </NavLink>
-        
-         <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/tracker">
+
+        <NavLink
+          style={({ isActive }) =>
+            isActive ? { color: "#B3561B" } : { color: "#828282" }
+          }
+          className="nav-link"
+          to="/tracker"
+        >
           <FiClock className="icon" />
           Tracker
         </NavLink>
-        <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/cart">
+        <NavLink
+          style={({ isActive }) =>
+            isActive ? { color: "#B3561B" } : { color: "#828282" }
+          }
+          className="nav-link"
+          to="/cart"
+        >
           <FiShoppingCart className="icon" />
           Cart
           <div className="cart-count">0</div>
         </NavLink>
-            <NavLink style={({ isActive }) => isActive ? { color: "#B3561B" } : { color: "#828282" }} className="nav-link" to="/login">
-        <FiLogIn className="icon" />
+        <NavLink
+          style={({ isActive }) =>
+            isActive ? { color: "#B3561B" } : { color: "#828282" }
+          }
+          className="nav-link"
+          to="/login"
+        >
+          <FiLogIn className="icon" />
           Login/SignUp
-          </NavLink>
+        </NavLink>
+      </nav>
+      <nav className="mobile-nav">
+        <NavLink
+          style={({ isActive }) =>
+            isActive ? { color: "#B3561B" } : { color: "#828282" }
+          }
+          className="nav-link"
+          to="/"
+        >
+          <FiHome className="icon" />
+          Home
+        </NavLink>
+
+        <NavLink
+          style={({ isActive }) =>
+            isActive ? { color: "#B3561B" } : { color: "#828282" }
+          }
+          className="nav-link"
+          to="/market"
+        >
+          <FiList className="icon" />
+          Category
+        </NavLink>
+
+        <NavLink
+          style={({ isActive }) =>
+            isActive ? { color: "#B3561B" } : { color: "#828282" }
+          }
+          className="nav-link"
+          to="/tracker"
+        >
+          <FiClock className="icon" />
+          Tracker
+        </NavLink>
+        <NavLink
+          style={({ isActive }) =>
+            isActive ? { color: "#B3561B" } : { color: "#828282" }
+          }
+          className="nav-link"
+          to="/cart"
+        >
+          <FiShoppingCart className="icon" />
+          Cart
+          <div className="cart-count">0</div>
+        </NavLink>
+        <NavLink
+          style={({ isActive }) =>
+            isActive ? { color: "#B3561B" } : { color: "#828282" }
+          }
+          className="nav-link"
+          to="/login"
+        >
+          <FiLogIn className="icon" />
+          Login/SignUp
+        </NavLink>
       </nav>
     </div>
   );
 };
-
 
 class Home extends React.Component {
   constructor(props) {
@@ -105,32 +163,34 @@ class Home extends React.Component {
   }
 
   render() {
-    const slides = [ 
+    const slides = [
       {
         image: grocerySix,
         btnText: "Shop With MyDomot Today",
         text: "We are ONLY operating in Lagos, Nigeria at the moment.",
-        subtext: "We are your one-stop shop for all your grocery needs. Make a grocery list and we'll take care of the rest. We'll make sure you get everything you need in one convenient doorstep delivery.",
-        
+        subtext:
+          "We are your one-stop shop for all your grocery needs. Make a grocery list and we'll take care of the rest. We'll make sure you get everything you need in one convenient doorstep delivery.",
+
         imagetwo: groceryThree,
       },
       {
         image: groceryOne,
         btnText: "Happy Easter from us at MyDomot!",
         text: "Get Your Groceries Delivered Easily and Affordably this Easter.",
-        subtext: "Let our experienced shoppers bring the groceries you need right to your doorstep, so  you can enjoy more time doing the things you love this Easter.",
-        
+        subtext:
+          "Let our experienced shoppers bring the groceries you need right to your doorstep, so  you can enjoy more time doing the things you love this Easter.",
+
         imagetwo: grocerySeven,
       },
       {
         image: groceryFour,
         btnText: "Become a Shopper",
         text: "Earn Money With MyDomot: Become a Shopper And Make It Happen!",
-        subtext: "Apply today, to become one of our professionally trained shoppers, make money while helping others enjoy the Flexibility and Security of Shopping at Home with MyDomot.",
-        
+        subtext:
+          "Apply today, to become one of our professionally trained shoppers, make money while helping others enjoy the Flexibility and Security of Shopping at Home with MyDomot.",
+
         imagetwo: groceryTwo,
       },
-     
     ];
 
     return (
@@ -138,31 +198,31 @@ class Home extends React.Component {
         <Navigation />
         <div className="slider-container">
           <div className="slider">
-            
             {slides.map((slide, index) => {
               const slideClasses = `slide ${
                 index === this.state.currentSlide ? "active" : ""
               }`;
               return (
                 <>
-            
-                <div className={slideClasses} key={index}>
-                  
-                  <img src={slide.image} alt={slide.text} />
-                  <img src={slide.imagetwo} alt={slide.text} className="web-image-two" />
-                  
-                  <div className="slide-text">
-                    <button
-                      onClick={() => this.handleSlideChange(index)}
-                      className="slide-btn"
-                    >
-                      {slide.btnText}
-                    </button>
-                    <p className="first-text">{slide.text}</p>
-                    <p className="second-text">{slide.subtext}</p>
-                    
+                  <div className={slideClasses} key={index}>
+                    <img src={slide.image} alt={slide.text} />
+                    <img
+                      src={slide.imagetwo}
+                      alt={slide.text}
+                      className="web-image-two"
+                    />
+
+                    <div className="slide-text">
+                      <button
+                        onClick={() => this.handleSlideChange(index)}
+                        className="slide-btn"
+                      >
+                        {slide.btnText}
+                      </button>
+                      <p className="first-text">{slide.text}</p>
+                      <p className="second-text">{slide.subtext}</p>
+                    </div>
                   </div>
-                </div>
                 </>
               );
             })}
@@ -177,8 +237,7 @@ class Home extends React.Component {
                   className={navClasses}
                   key={index}
                   onClick={() => this.handleSlideChange(index)}
-                >
-                </button>
+                ></button>
               );
             })}
           </div>
@@ -218,7 +277,6 @@ class Home extends React.Component {
     );
   }
 }
-
 
 class SignupPage extends React.Component {
   constructor(props) {
@@ -271,8 +329,8 @@ class SignupPage extends React.Component {
               placeholder="Email"
               required
             />
-             <label>
-             Phone Number<span>*</span>
+            <label>
+              Phone Number<span>*</span>
             </label>
             <input type="text" placeholder="Phone Number" required />
             <label>
@@ -280,7 +338,7 @@ class SignupPage extends React.Component {
             </label>
             <select>
               <option value="Lagos">Lagos </option>
-              </select>
+            </select>
             <label>
               Password<span>*</span>
             </label>

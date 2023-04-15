@@ -5,13 +5,13 @@
 
 .flowchart-container {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   margin: 0px 0px 50px 0px;
   padding: 0px 0px 30px 0px;
-background-color: white;
-border-radius: 0px 0px 8px 8px;
+  background-color: white;
+  border-radius: 0px 0px 8px 8px;
 }
 
 .flowchart-container .flow {
@@ -28,7 +28,7 @@ border-radius: 0px 0px 8px 8px;
 
 .flowchart-container .flow p {
   font-size: 16px;
-  color: #B3561B;
+  color: #b3561b;
   text-align: center;
   padding: 0px 15px;
   font-weight: 500;
@@ -39,7 +39,7 @@ border-radius: 0px 0px 8px 8px;
   height: 48px;
   padding: 8px;
   width: 100%;
-  background-color: #B3561B;
+  background-color: #b3561b;
   display: flex;
   font-size: 1.25rem;
   justify-content: center;
@@ -51,7 +51,7 @@ border-radius: 0px 0px 8px 8px;
 @media (max-width: 900px) {
   .flowchart-container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }

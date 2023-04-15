@@ -895,14 +895,12 @@ export function Categories() {
   );
 }
 
-
-
 const Category = () => {
   const [category, setCategory] = useState(groceryList);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [counts, setCounts] = useState({});
   const [showAll, setShowAll] = useState(false);
-  
+
   const handleChange = (e) => {
     setSelectedCategory(e.target.value);
     switch (e.target.value) {
@@ -928,21 +926,21 @@ const Category = () => {
         setCategory(groceryList);
         break;
     }
-  }
+  };
 
   const handleShowAll = () => {
     setShowAll(!showAll);
-  }
+  };
 
   const decrement = (name) => {
     if (counts[name] && counts[name] > 0) {
       setCounts({ ...counts, [name]: counts[name] - 1 });
     }
-  }
+  };
 
   const increment = (name) => {
     setCounts({ ...counts, [name]: (counts[name] || 0) + 1 });
-  }
+  };
 
   return (
     <>
@@ -966,26 +964,38 @@ const Category = () => {
           </div>
         </div>
         <div className="container">
-          {category.slice(0, showAll ? category.length : 12).map((grocery, index) => (
-            <div key={index} className="card">
-              <img
-                className="card__image"
-                src={grocery.image}
-                alt={grocery.name}
-              />
-              <div className="card__content">
-                <p className="card__title">{grocery.name}</p>
-                <p className="card__quantity">{grocery.quantity}</p>
-                <p className="card__price">{grocery.price}</p>
+          {category
+            .slice(0, showAll ? category.length : 12)
+            .map((grocery, index) => (
+              <div key={index} className="card">
+                <img
+                  className="card__image"
+                  src={grocery.image}
+                  alt={grocery.name}
+                />
+                <div className="card__content">
+                  <p className="card__title">{grocery.name}</p>
+                  <p className="card__quantity">{grocery.quantity}</p>
+                  <p className="card__price">{grocery.price}</p>
+                </div>
+                <div className="count-container">
+                  <button
+                    className="decrement-button"
+                    onClick={() => decrement(grocery.name)}
+                  >
+                    -
+                  </button>
+                  <div className="count">{counts[grocery.name] || 0}</div>
+                  <button
+                    className="increment-button"
+                    onClick={() => increment(grocery.name)}
+                  >
+                    +
+                  </button>
+                </div>
+                <button className="card__button">Add to Cart</button>
               </div>
-              <div className="count-container">
-                    <button className="decrement-button" onClick={() => decrement(grocery.name)}>-</button>
-                    <div className="count">{counts[grocery.name] || 0}</div>
-                    <button className="increment-button" onClick={() => increment(grocery.name)}>+</button>
-                  </div>
-                  <button className="card__button">Add to Cart</button>
-            </div>
-          ))}
+            ))}
         </div>
         {showAll ? (
           <button className="see-all-button" onClick={handleShowAll}>

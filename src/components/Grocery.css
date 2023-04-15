@@ -43,8 +43,6 @@
   font-size: 20px;
   padding: 5px 8px 8px 8px;
   border-radius: 8px 8px 0px 0px;
-  /* margin: 0 auto;
-    margin-top: 40px; */
   margin: 0px 15px 0px 15px;
 }
 
@@ -97,7 +95,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /* margin: 0 auto; */
   position: relative;
   overflow: hidden;
   border-radius: 0px 0px 8px 8px;
@@ -121,7 +118,7 @@
     margin: 5px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
   }
-  
+
   .card__image {
     width: 150px;
     height: 150px;
