@@ -157,6 +157,11 @@ This will start the application on `http://localhost:3000`.
 
 <br />
 
+<div align="center">
+  <a href="https://github.com/teqbaddie/MyDomot">
+    <img src="public/MyDomotScreenTwo.png" alt="Logo" width="90%" height="90%">
+  </a>
+</div>
 
 
 <br/>
