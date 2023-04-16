@@ -1,49 +1,45 @@
 import React from "react";
 import "../components/Market.css";
 import { Link, Route } from "react-router-dom";
-import Category from "./Category";
-import marketone from "../assets/market-one.jpg";
-import markettwo from "../assets/market-two.jpg";
-import marketthree from "../assets/market-three.jpg";
-import marketfour from "../assets/market-four.jpg";
-import marketfive from "../assets/market-five.jpg";
-import marketsix from "../assets/market-six.png";
+import Category from "../view/Category";
 
 export default function Market() {
   return (
-    <div className="ad-categories">
-      <p>Local Markets in Lagos, Nigeria</p>
-      <div className="ad-category">
-        <div className="one-market">
-          <img src={marketone} alt="foodstuff" />
-          <p>Oshodi Market – Oshodi, Lagos</p>
-          <div>
-            <Link to="/category">
-              <button>Select</button>
-            </Link>
-          </div>
-        </div>
-        <div className="one-market">
-          <img src={markettwo} alt="foodstuff" />
-          <p>Balogun Market – Lagos Island, Lagos</p>
-        </div>
-        <div className="one-market">
-          <img src={marketthree} alt="foodstuff" />
-          <p>Tejuosho Market – Yaba, Lagos</p>
-        </div>
-        <div className="one-market">
-          <img src={marketfour} alt="foodstuff" />
-          <p>Eko Market – Victoria Island, Lagos</p>
-        </div>
-        <div className="one-market">
-          <img src={marketfive} alt="foodstuff" />
-          <p>Ojuwoye Market - Mushin, Lagos</p>
-        </div>
-        <div className="one-market">
-          <img src={marketsix} alt="foodstuff" />
-          <p>Ojota Market - Ojota, Lagos</p>
-        </div>
-      </div>
+    <div className="select-market">
+      <h2>Select a Market</h2>
+      <p className="first">
+        {" "}
+        <input type="radio" name="market" value="oshodi market" /> Oshodi Market
+        – Oshodi, Lagos{" "}
+      </p>
+      <p>
+        {" "}
+        <input type="radio" name="market" value="balogun market" /> Balogun
+        Market – Lagos Island, Lagos{" "}
+      </p>
+      <p>
+        {" "}
+        <input type="radio" name="market" value="tejuosho market" /> Tejuosho
+        Market – Yaba, Lagos{" "}
+      </p>
+      <p>
+        {" "}
+        <input type="radio" name="market" value="eko market" /> Eko Market –
+        Victoria Island, Lagos{" "}
+      </p>
+      <p>
+        {" "}
+        <input type="radio" name="market" value="ojuwoye market" /> Ojuwoye
+        Market - Mushin, Lagos{" "}
+      </p>
+      <p>
+        {" "}
+        <input type="radio" name="market" value="ojota market" /> Ojota Market -
+        Ojota, Lagos{" "}
+      </p>
+      <Link to="/category">
+        <button>Done</button>
+      </Link>
     </div>
   );
 }

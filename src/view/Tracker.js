@@ -1,21 +1,22 @@
 import React from "react";
 import { Navigation } from "./Hero";
-import "../components/Cart.css";
+import "../view/Tracker.css";
 import emptycart from "../assets/empty-cart.png";
 import { Link, Route } from "react-router-dom";
 import Category from "./Category";
-import Footer from "./Footer";
+import Footer from "../components/Footer";
 
-export default function Cart() {
+export default function Tracker() {
   return (
     <>
       <Navigation />
-      <div className="cart-container">
+      <div className="tracker-container">
         <img src={emptycart} alt="emptycart" className="empty-cart" />
-        <h2>You have no items in your cart at the moment.</h2>
+        <h2>You have no item to be tracked yet.</h2>
         <p>
-          Before you can proceed to checkout, you must have added some groceries
-          to your cart. You will find a lot of groceries in different Category.
+          You must have checkout the groceries in your cart before you can
+          proceed to track them. Kindly ensure you have groceries in your cart
+          or use the button below to start shopping.{" "}
         </p>
         <Link to="/category">
           <button>Start Shopping Now!</button>

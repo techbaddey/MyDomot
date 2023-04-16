@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import Path from "./components/Hero";
+import Path from "./view/Hero";
 
 function App() {
   return (
