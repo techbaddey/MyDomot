@@ -136,7 +136,7 @@ To get started, clone the repository and run the following commands:
 
 1. Clone the repository
 ```bash
-git clone https://github.com/teqbaddie/MyDomot.git
+git clone https://github.com/techbaddey/MyDomot.git
 ```
 2. Install dependencies
 ```bash
